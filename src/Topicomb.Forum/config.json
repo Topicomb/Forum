@@ -17,5 +17,11 @@
 		"RequireNonLetterOrDigit": false,
 		"RequireUppercase": false,
 		"AllowedUserNameCharacters": false
+	},
+	
+	"Installation": {
+		"WithSampleData": true,
+		"RootUserName": "admin",
+		"Password": "123456"
 	}
 }

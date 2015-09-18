@@ -4,29 +4,74 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
+using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Data.Entity;
+using Microsoft.Framework.Logging;
+using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
+using Microsoft.Dnx.Runtime;
 using Topicomb.Forum.Models;
 
 namespace Topicomb.Forum
 {
     public class Startup
     {
+        public static IConfiguration Configuration { get; set; }
+        
+        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
+        {
+            var builder = new ConfigurationBuilder(appEnv.ApplicationBasePath)
+                .AddJsonFile("config.json")
+                .AddJsonFile($"config.{env.EnvironmentName}.json", optional: true);
+
+            builder.AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc()
                 .AddTemplate();
-            
-            services.AddEntityFramework()
-                .AddDbContext<ForumContext> ()
                 
+            var appEnv = services.BuildServiceProvider().GetRequiredService<IApplicationEnvironment>(); 
+
+            switch(Configuration["Database.Mode"])
+            {
+                case "SQLite":
+                    services.AddEntityFramework()
+                        .AddSqlite()
+                        .AddDbContext<ForumContext> (x => x.UseSqlite(Configuration["Database.ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
+                    break;
+                case "SQLServer":
+                    services.AddEntityFramework()
+                        .AddSqlServer()
+                        .AddDbContext<ForumContext> (x => x.UseSqlite(Configuration["Database.ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
+                    break;
+            }
+            
+            services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<ForumContext>()
+                .AddDefaultTokenProviders();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public async void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.Run(async (context) =>
+            loggerFactory.MinimumLevel = LogLevel.Information;
+            loggerFactory.AddConsole();
+            loggerFactory.AddDebug();
+
+            app.UseStaticFiles();
+            
+            app.UseMvc(router =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                router.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //await SampleData.InitializeYuukoBlog(app.ApplicationServices);
         }
     }
 }
