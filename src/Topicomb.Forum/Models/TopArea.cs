@@ -4,6 +4,6 @@ namespace Topicomb.Forum.Models
 	{
 		Section,
 		Forum,
-		Everywhere
+		Overall
 	}
 }
