@@ -6,15 +6,18 @@ using Microsoft.Framework.DependencyInjection;
 
 namespace Topicomb.Forum.Models
 {
-	public async static Task InitDB(IServiceProvider services)
+	public static class SampleData
 	{
-		var DB = services.GetRequiredService<ForumContext> ();
-		var UserManager = services.GetRequiredService<UserManager<User>> ();
-		var RoleManager = services.GetRequiredService<RoleManager<IdentityRole>> ();
-		
-		if (DB.Database != null && await DB.Database.EnsureCreatedAsync())
+		public async static Task InitDB(IServiceProvider services)
 		{
-			// TODO: Initial the database
-		}
-	} 
+			var DB = services.GetRequiredService<ForumContext> ();
+			var UserManager = services.GetRequiredService<UserManager<User>> ();
+			var RoleManager = services.GetRequiredService<RoleManager<IdentityRole>> ();
+			
+			if (DB.Database != null && await DB.Database.EnsureCreatedAsync())
+			{
+				// TODO: Initial the database
+			}
+		} 
+	}
 }
