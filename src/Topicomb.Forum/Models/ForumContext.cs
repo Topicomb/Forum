@@ -11,6 +11,8 @@ namespace Topicomb.Forum.Models
 		public DbSet<Topic> Topics { get; set; }
 		public DbSet<VoteOption> VoteOptions { get; set; }
 		public DbSet<VoteRecord> VoteRecords { get; set; }
+		public DbSet<ForumTag> ForumTags { get; set; }
+		public DbSet<TopicTag> TopicTags { get; set; }
 		
 		protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -40,6 +42,23 @@ namespace Topicomb.Forum.Models
 			{
 				e.Index(x => x.PRI);
 				e.Index(x => x.Count);
+			});
+			
+			builder.Entity<VoteRecord> (e => 
+			{
+				e.Index(x => x.Time);
+			});
+			
+			builder.Entity<ForumTag> (e => 
+			{
+				e.Index(x => x.Title);
+				e.Index(x => x.Count);
+				e.Index(x => x.PRI);
+			});
+			
+			builder.Entity<TopicTag> (e =>
+			{
+				e.Key(x => new { x.ForumTagId, x.TopicId });
 			});
 		}
 	}

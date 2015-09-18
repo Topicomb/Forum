@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -37,5 +38,7 @@ namespace Topicomb.Forum.Models
 		public long UserId { get; set; }
 		
 		public virtual User User { get; set; }
+		
+		public virtual ICollection<VoteOption> VoteOptions { get; set; } = new List<VoteOption> ();
 	}
 }

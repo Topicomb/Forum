@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -29,5 +30,7 @@ namespace Topicomb.Forum.Models
 		public int PRI { get; set; }
 		
 		public virtual Blob Icon { get; set; }
+		
+		public virtual ICollection<ForumTag> ForumTags { get; set; }
 	}
 }

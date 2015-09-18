@@ -12,12 +12,12 @@ namespace Topicomb.Forum.Models
 		[ForeignKey("VoteOption")]
 		public Guid OptionId { get; set; }
 		
-		public VoteOption VoteOption { get; set; }
+		public virtual VoteOption VoteOption { get; set; }
 		
 		[ForeignKey("User")]
 		public long UserId { get; set; }
 		
-		public User User { get; set; }
+		public virtual User User { get; set; }
 		
 		public DateTime Time { get; set; }
 	}
