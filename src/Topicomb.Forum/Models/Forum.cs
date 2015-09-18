@@ -16,6 +16,18 @@ namespace Topicomb.Forum.Models
 		
 		public string Description { get; set; }
 		
+		[ForeignKey("Parent")]
+		public long ParentId { get; set; }
 		
+		public Forum Parent { get; set; }
+		
+		public string Password { get; set; }
+		
+		[ForeignKey("Blob")]
+		public Guid IconId { get; set; }
+		
+		public int PRI { get; set; }
+		
+		public virtual Blob Icon { get; set; }
 	}
 }
