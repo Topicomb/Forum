@@ -1,0 +1,21 @@
+{
+	"Database": {
+		"Mode": "SQLite",
+		"ConnectionString": "Data source={AppRoot}/Database/forum.db"
+	},
+	
+	"Site": {
+		"Name": "Topicomb",
+		"Description": "A forum based on ASP.Net vNext",
+		"Close": false,
+		"DefaultTemplate": "Default"
+	},
+	
+	"Password": {
+		"RequireDigit": false,
+		"RequireLowercase": false,
+		"RequireNonLetterOrDigit": false,
+		"RequireUppercase": false,
+		"AllowedUserNameCharacters": false
+	}
+}
