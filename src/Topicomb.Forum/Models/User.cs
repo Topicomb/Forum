@@ -1,10 +1,15 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Topicomb.Forum.Models
 {
-	public class User : IdentityUser<int>
+	public class User : IdentityUser<long>
 	{
-		public byte[] Avatar { get; set; }
+		[ForeignKey("Avatar")]
+		public Guid AvatarId { get; set; }
+		
+		public virtual Blob Avatar { get; set; }
 		
 		public string AvatarContentType { get; set; }
 		

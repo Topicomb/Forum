@@ -13,6 +13,7 @@ using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Dnx.Runtime;
 using Topicomb.Forum.Models;
+using Topicomb.Forum.Exceptions;
 
 namespace Topicomb.Forum
 {
@@ -31,10 +32,7 @@ namespace Topicomb.Forum
         }
         
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddMvc()
-                .AddTemplate();
-                
+        {  
             var appEnv = services.BuildServiceProvider().GetRequiredService<IApplicationEnvironment>(); 
 
             switch(Configuration["Database.Mode"])
@@ -47,13 +45,20 @@ namespace Topicomb.Forum
                 case "SQLServer":
                     services.AddEntityFramework()
                         .AddSqlServer()
-                        .AddDbContext<ForumContext> (x => x.UseSqlite(Configuration["Database.ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
+                        .AddDbContext<ForumContext> (x => x.UseSqlServer(Configuration["Database.ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
                     break;
+                default:
+                    throw new DatabaseNotSupportedException(Configuration["Database.Mode"]);
             }
             
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ForumContext>()
                 .AddDefaultTokenProviders();
+                
+            services.AddMvc()
+                .AddTemplate();
+                
+            services.AddCurrentUser<long, User>();
         }
 
         public async void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -71,7 +76,7 @@ namespace Topicomb.Forum
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //await SampleData.InitializeYuukoBlog(app.ApplicationServices);
+            await SampleData.InitDB(app.ApplicationServices);
         }
     }
 }
