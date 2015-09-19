@@ -14,6 +14,10 @@ namespace Topicomb.Forum.Models
 		public DbSet<ForumTag> ForumTags { get; set; }
 		public DbSet<TopicTag> TopicTags { get; set; }
 		
+		public DbSet<Link> Links { get; set; }
+		
+		public DbSet<PrivateMessage> PrivateMessages { get; set; }
+		
 		protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -59,6 +63,18 @@ namespace Topicomb.Forum.Models
 			builder.Entity<TopicTag> (e =>
 			{
 				e.Key(x => new { x.ForumTagId, x.TopicId });
+			});
+			
+			builder.Entity<Link> (e =>
+			{
+				e.Index(x => x.PRI);
+				e.Index(x => x.Type);
+			});
+			
+			builder.Entity<PrivateMessage> (e => 
+			{
+				e.Index(x => x.Time);
+				e.Index(x => x.IsRead);
 			});
 		}
 	}
