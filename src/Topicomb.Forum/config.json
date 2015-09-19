@@ -8,7 +8,9 @@
 		"Name": "Topicomb",
 		"Description": "A forum based on ASP.Net vNext",
 		"Close": false,
-		"DefaultTemplate": "Default"
+		"DefaultTemplate": "Default",
+		"AttachmentSize": "4096",
+		"AvatarSize": "512"
 	},
 	
 	"Password": {

@@ -35,24 +35,24 @@ namespace Topicomb.Forum
         {  
             var appEnv = services.BuildServiceProvider().GetRequiredService<IApplicationEnvironment>(); 
 
-            switch(Configuration["Database.Mode"])
+            switch(Configuration["Database:Mode"])
             {
                 case "SQLite":
                     services.AddEntityFramework()
                         .AddSqlite()
-                        .AddDbContext<ForumContext> (x => x.UseSqlite(Configuration["Database.ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
+                        .AddDbContext<ForumContext> (x => x.UseSqlite(Configuration["Database:ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
                     break;
                 case "SQLServer":
                     services.AddEntityFramework()
                         .AddSqlServer()
-                        .AddDbContext<ForumContext> (x => x.UseSqlServer(Configuration["Database.ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
+                        .AddDbContext<ForumContext> (x => x.UseSqlServer(Configuration["Database:ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
                     break;
                 default:
-                    throw new DatabaseNotSupportedException(Configuration["Database.Mode"]);
+                    throw new DatabaseNotSupportedException(Configuration["Database:Mode"]);
             }
             
-            services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<ForumContext>()
+            services.AddIdentity<User, IdentityRole<long>>()
+                .AddEntityFrameworkStores<ForumContext, long>()
                 .AddDefaultTokenProviders();
                 
             services.AddMvc()

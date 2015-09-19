@@ -13,15 +13,21 @@ namespace Topicomb.Forum.Models
 		public DbSet<VoteRecord> VoteRecords { get; set; }
 		public DbSet<ForumTag> ForumTags { get; set; }
 		public DbSet<TopicTag> TopicTags { get; set; }
-		
 		public DbSet<Link> Links { get; set; }
-		
 		public DbSet<PrivateMessage> PrivateMessages { get; set; }
 		
 		protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-			
+
+            builder.Entity<User>(e =>
+            {
+                e.Collection(x => x.Sent)
+                    .InverseReference(x => x.Sender);
+                e.Collection(x => x.Received)
+                    .InverseReference(x => x.Receiver);
+            });
+
 			builder.Entity<Blob> (e =>
 			{
 				e.Index(x => x.Time);

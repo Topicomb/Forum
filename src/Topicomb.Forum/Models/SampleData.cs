@@ -12,7 +12,7 @@ namespace Topicomb.Forum.Models
 		{
 			var DB = services.GetRequiredService<ForumContext> ();
 			var UserManager = services.GetRequiredService<UserManager<User>> ();
-			var RoleManager = services.GetRequiredService<RoleManager<IdentityRole>> ();
+			var RoleManager = services.GetRequiredService<RoleManager<IdentityRole<long>>> ();
 			
 			if (DB.Database != null && await DB.Database.EnsureCreatedAsync())
 			{
