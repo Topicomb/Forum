@@ -15,6 +15,7 @@ namespace Topicomb.Forum.Models
 		public DbSet<TopicTag> TopicTags { get; set; }
 		public DbSet<Link> Links { get; set; }
 		public DbSet<PrivateMessage> PrivateMessages { get; set; }
+		public DbSet<Credit> Credits { get; set; }
 		
 		protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -81,6 +82,13 @@ namespace Topicomb.Forum.Models
 			{
 				e.Index(x => x.Time);
 				e.Index(x => x.IsRead);
+			});
+			
+			builder.Entity<Credit> (e => 
+			{
+				e.Index(x => x.IsBlankedOut);
+				e.Index(x => x.IsTransferable);
+				e.Index(x => x.DisplayInProfile);
 			});
 		}
 	}
