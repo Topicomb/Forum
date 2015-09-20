@@ -59,6 +59,7 @@ namespace Topicomb.Forum
                 .AddTemplate();
                 
             services.AddCurrentUser<long, User>();
+            services.AddCodeCombLocalizationJsonDictionary();
         }
 
         public async void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -75,6 +76,8 @@ namespace Topicomb.Forum
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseCodeCombLocalization("/shared/localization.js");
 
             await SampleData.InitDB(app.ApplicationServices);
         }

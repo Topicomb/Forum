@@ -40,7 +40,7 @@ namespace Topicomb.Forum.Models
 		public virtual User User { get; set; }
 		
 		[ForeignKey("Parent")]
-		public long ParentId { get; set; }
+		public long? ParentId { get; set; }
 		
 		public virtual Topic Parent { get; set; }
 		
