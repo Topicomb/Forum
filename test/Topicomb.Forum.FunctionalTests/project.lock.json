@@ -5514,7 +5514,7 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/win7-x86": {
+    "DNX,Version=v4.5.1/darwin-x86": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -6811,9 +6811,6 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.Data.Sqlite.dll": {}
-        },
-        "native": {
-          "runtimes/win-x86/native/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -7626,7 +7623,7 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/win7-x64": {
+    "DNX,Version=v4.5.1/darwin-x64": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -8923,9 +8920,6 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.Data.Sqlite.dll": {}
-        },
-        "native": {
-          "runtimes/win/native/x86/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -9738,7 +9732,7 @@
         }
       }
     },
-    "DNXCore,Version=v5.0/win7-x86": {
+    "DNXCore,Version=v5.0/darwin-x86": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -10868,9 +10862,6 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.Data.Sqlite.dll": {}
-        },
-        "native": {
-          "runtimes/win-x86/native/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -11515,43 +11506,6 @@
           "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
         }
       },
-      "runtime.win7.System.Data.SqlClient/4.0.0-beta-23302": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.0.0",
-          "System.Collections": "4.0.10",
-          "System.Collections.Concurrent": "4.0.0",
-          "System.Collections.NonGeneric": "4.0.0",
-          "System.Data.Common": "4.0.0",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Handles": "4.0.0",
-          "System.Runtime.InteropServices": "4.0.20",
-          "System.Security.Principal.Windows": "4.0.0-beta-23302",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.CodePages": "4.0.0",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Threading.Thread": "4.0.0-beta-23302",
-          "System.Threading.ThreadPool": "4.0.0-beta-23302",
-          "System.Threading.Timer": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Data.SqlClient.dll": {}
-        }
-      },
       "System.AppContext/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -11987,12 +11941,6 @@
           "lib/dotnet/System.IO.Compression.dll": {}
         }
       },
-      "System.IO.Compression.clrcompression-x86/4.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win7-x86/native/clrcompression.dll": {}
-        }
-      },
       "System.IO.FileSystem/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -12318,21 +12266,6 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Reflection.Emit.ILGeneration.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Reflection.Emit.ILGeneration": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Runtime": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet/System.Reflection.Emit.Lightweight.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Reflection.Emit.Lightweight.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.1-beta-23302": {
@@ -13202,7 +13135,7 @@
         }
       }
     },
-    "DNXCore,Version=v5.0/win7-x64": {
+    "DNXCore,Version=v5.0/darwin-x64": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -14332,9 +14265,6 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.Data.Sqlite.dll": {}
-        },
-        "native": {
-          "runtimes/win/native/x86/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -14979,43 +14909,6 @@
           "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
         }
       },
-      "runtime.win7.System.Data.SqlClient/4.0.0-beta-23302": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.0.0",
-          "System.Collections": "4.0.10",
-          "System.Collections.Concurrent": "4.0.0",
-          "System.Collections.NonGeneric": "4.0.0",
-          "System.Data.Common": "4.0.0",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Handles": "4.0.0",
-          "System.Runtime.InteropServices": "4.0.20",
-          "System.Security.Principal.Windows": "4.0.0-beta-23302",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.CodePages": "4.0.0",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Threading.Thread": "4.0.0-beta-23302",
-          "System.Threading.ThreadPool": "4.0.0-beta-23302",
-          "System.Threading.Timer": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Data.SqlClient.dll": {}
-        }
-      },
       "System.AppContext/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -15451,12 +15344,6 @@
           "lib/dotnet/System.IO.Compression.dll": {}
         }
       },
-      "System.IO.Compression.clrcompression-x64/4.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win7-x64/native/clrcompression.dll": {}
-        }
-      },
       "System.IO.FileSystem/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -15782,21 +15669,6 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Reflection.Emit.ILGeneration.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Reflection.Emit.ILGeneration": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Runtime": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet/System.Reflection.Emit.Lightweight.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Reflection.Emit.Lightweight.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.1-beta-23302": {
@@ -18281,18 +18153,6 @@
         "Remotion.Linq.nuspec"
       ]
     },
-    "runtime.win7.System.Data.SqlClient/4.0.0-beta-23302": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "w9H86Bbrvf8L36W1F3l+0m5eFLet6ZB+qUzSbuJocihLRC3kVMhsMkhN1xDaEzux7CjqLUlkrnw3nueQeOYdcA==",
-      "files": [
-        "lib/DNXCore50/System.Data.SqlClient.dll",
-        "ref/dotnet/_._",
-        "runtime.win7.System.Data.SqlClient.4.0.0-beta-23302.nupkg",
-        "runtime.win7.System.Data.SqlClient.4.0.0-beta-23302.nupkg.sha512",
-        "runtime.win7.System.Data.SqlClient.nuspec"
-      ]
-    },
     "System.AppContext/4.0.1-beta-23302": {
       "type": "package",
       "serviceable": true,
@@ -18944,28 +18804,6 @@
         "System.IO.Compression.nuspec"
       ]
     },
-    "System.IO.Compression.clrcompression-x64/4.0.0": {
-      "type": "package",
-      "sha512": "Lqr+URMwKzf+8HJF6YrqEqzKzDzFJTE4OekaxqdIns71r8Ufbd8SbZa0LKl9q+7nu6Em4SkIEXVMB7plSXekOw==",
-      "files": [
-        "runtimes/win10-x64/native/ClrCompression.dll",
-        "runtimes/win7-x64/native/clrcompression.dll",
-        "System.IO.Compression.clrcompression-x64.4.0.0.nupkg",
-        "System.IO.Compression.clrcompression-x64.4.0.0.nupkg.sha512",
-        "System.IO.Compression.clrcompression-x64.nuspec"
-      ]
-    },
-    "System.IO.Compression.clrcompression-x86/4.0.0": {
-      "type": "package",
-      "sha512": "GmevpuaMRzYDXHu+xuV10fxTO8DsP7OKweWxYtkaxwVnDSj9X6RBupSiXdiveq9yj/xjZ1NbG+oRRRb99kj+VQ==",
-      "files": [
-        "runtimes/win10-x86/native/ClrCompression.dll",
-        "runtimes/win7-x86/native/clrcompression.dll",
-        "System.IO.Compression.clrcompression-x86.4.0.0.nupkg",
-        "System.IO.Compression.clrcompression-x86.4.0.0.nupkg.sha512",
-        "System.IO.Compression.clrcompression-x86.nuspec"
-      ]
-    },
     "System.IO.FileSystem/4.0.1-beta-23302": {
       "type": "package",
       "serviceable": true,
@@ -19297,7 +19135,7 @@
     "System.Reflection/4.1.0-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "nlguo6AocBKGccv4CFSMCOR2/vU+93u/yvzFKO6ViNJ/SBz2VEZ1nOeW93vqKKpOMJkt3YtTvMWmS+kUGz/1bA==",
+      "sha512": "WbLtaCxoe5XdqEyZuGpemSQ8YBJ8cj11zx+yxOxJfHbNrmu7oMQ29+J50swaqg3soUc3BVBMqfIhb/7gocDHQA==",
       "files": [
         "lib/DNXCore50/System.Reflection.dll",
         "lib/MonoAndroid10/_._",
@@ -19370,32 +19208,6 @@
         "System.Reflection.Emit.ILGeneration.4.0.0.nupkg",
         "System.Reflection.Emit.ILGeneration.4.0.0.nupkg.sha512",
         "System.Reflection.Emit.ILGeneration.nuspec"
-      ]
-    },
-    "System.Reflection.Emit.Lightweight/4.0.0": {
-      "type": "package",
-      "sha512": "DJZhHiOdkN08xJgsJfDjkuOreLLmMcU8qkEEqEHqyhkPUZMMQs0lE8R+6+68BAFWgcdzxtNu0YmIOtEug8j00w==",
-      "files": [
-        "lib/DNXCore50/System.Reflection.Emit.Lightweight.dll",
-        "lib/net45/_._",
-        "lib/netcore50/System.Reflection.Emit.Lightweight.dll",
-        "lib/wp80/_._",
-        "ref/dotnet/de/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/es/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/fr/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/it/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/ja/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/ko/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/ru/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/System.Reflection.Emit.Lightweight.dll",
-        "ref/dotnet/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/zh-hans/System.Reflection.Emit.Lightweight.xml",
-        "ref/dotnet/zh-hant/System.Reflection.Emit.Lightweight.xml",
-        "ref/net45/_._",
-        "ref/wp80/_._",
-        "System.Reflection.Emit.Lightweight.4.0.0.nupkg",
-        "System.Reflection.Emit.Lightweight.4.0.0.nupkg.sha512",
-        "System.Reflection.Emit.Lightweight.nuspec"
       ]
     },
     "System.Reflection.Extensions/4.0.1-beta-23302": {
@@ -20318,7 +20130,7 @@
     "System.Xml.XmlDocument/4.0.1-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "Q2XGKmufC/hYvmW28rU/629bSDaMTtkgW/hVyXhVymOshyA/TEeNxSGL670Hd9wJfsGJ9Vo2NIQkRIzHAQZ7KQ==",
+      "sha512": "l8DAbphrzEo0zJ0PZMf/5B/KUhlPdUNlyIbTIcgq5dCjjKcVJe/0gsoFw/0Oqj12MVxt/nORi/BfY9a93fAVwA==",
       "files": [
         "lib/dotnet/System.Xml.XmlDocument.dll",
         "lib/MonoAndroid10/_._",
