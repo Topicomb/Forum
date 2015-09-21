@@ -66,8 +66,6 @@ namespace Topicomb.Forum
                 .AddEntityFrameworkStores<ForumContext, long>()
                 .AddDefaultTokenProviders();
                 
-                
-                
             services.AddMvc()
                 .AddTemplate();
                 
@@ -91,7 +89,7 @@ namespace Topicomb.Forum
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseCodeCombLocalization("/shared/localization.js");
+            app.UseCodeCombLocalization("/assets/shared/localization.js");
 
             await SampleData.InitDB(app.ApplicationServices);
         }
