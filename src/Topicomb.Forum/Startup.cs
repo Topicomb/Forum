@@ -55,13 +55,15 @@ namespace Topicomb.Forum
             
             services.AddIdentity<User, IdentityRole<long>>(x => 
             {
-                x.Password.RequiredLength = Convert.ToInt32(Configuration["Password:RequiredLength"]);
-                x.Password.RequireDigit = Convert.ToBoolean(Configuration["Password:RequireDigit"]);
-                x.Password.RequireLowercase = Convert.ToBoolean(Configuration["Password:RequireLowercase"]);
-                x.Password.RequireNonLetterOrDigit = Convert.ToBoolean(Configuration["Password:RequireNonLetterOrDigit"]);
-                x.Password.RequireUppercase = Convert.ToBoolean(Configuration["Password:RequireUppercase"]);
-                if (!Convert.ToBoolean(Configuration["Password:AllowedUserNameCharacters"]))
+                x.Password.RequiredLength = Convert.ToInt32(Configuration["Security:RequiredLength"]);
+                x.Password.RequireDigit = Convert.ToBoolean(Configuration["Security:RequireDigit"]);
+                x.Password.RequireLowercase = Convert.ToBoolean(Configuration["Security:RequireLowercase"]);
+                x.Password.RequireNonLetterOrDigit = Convert.ToBoolean(Configuration["Security:RequireNonLetterOrDigit"]);
+                x.Password.RequireUppercase = Convert.ToBoolean(Configuration["Security:RequireUppercase"]);
+                x.User.RequireUniqueEmail = Convert.ToBoolean(Configuration["Security:RequireUniqueEmail"]);
+                if (!Convert.ToBoolean(Configuration["Security:AllowedUserNameCharacters"]))
                     x.User.AllowedUserNameCharacters = null;
+                
             })
                 .AddEntityFrameworkStores<ForumContext, long>()
                 .AddDefaultTokenProviders();
