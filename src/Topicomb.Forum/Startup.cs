@@ -53,9 +53,20 @@ namespace Topicomb.Forum
                     throw new DatabaseNotSupportedException(Configuration["Database:Mode"]);
             }
             
-            services.AddIdentity<User, IdentityRole<long>>()
+            services.AddIdentity<User, IdentityRole<long>>(x => 
+            {
+                x.Password.RequiredLength = Convert.ToInt32(Configuration["Password:RequiredLength"]);
+                x.Password.RequireDigit = Convert.ToBoolean(Configuration["Password:RequireDigit"]);
+                x.Password.RequireLowercase = Convert.ToBoolean(Configuration["Password:RequireLowercase"]);
+                x.Password.RequireNonLetterOrDigit = Convert.ToBoolean(Configuration["Password:RequireNonLetterOrDigit"]);
+                x.Password.RequireUppercase = Convert.ToBoolean(Configuration["Password:RequireUppercase"]);
+                if (!Convert.ToBoolean(Configuration["Password:AllowedUserNameCharacters"]))
+                    x.User.AllowedUserNameCharacters = null;
+            })
                 .AddEntityFrameworkStores<ForumContext, long>()
                 .AddDefaultTokenProviders();
+                
+                
                 
             services.AddMvc()
                 .AddTemplate();
@@ -70,6 +81,7 @@ namespace Topicomb.Forum
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
 
+            app.UseIdentity();
             app.UseStaticFiles();
             
             app.UseMvc(router =>

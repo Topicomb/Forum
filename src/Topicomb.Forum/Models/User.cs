@@ -8,11 +8,9 @@ namespace Topicomb.Forum.Models
 	public class User : IdentityUser<long>
 	{
 		[ForeignKey("Avatar")]
-		public Guid AvatarId { get; set; }
+		public Guid? AvatarId { get; set; }
 		
 		public virtual Blob Avatar { get; set; }
-		
-		public string AvatarContentType { get; set; }
 		
 		public string Motto { get; set; }
 
