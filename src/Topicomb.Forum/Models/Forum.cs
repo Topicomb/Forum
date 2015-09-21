@@ -31,6 +31,14 @@ namespace Topicomb.Forum.Models
 		
 		public virtual Blob Icon { get; set; }
 		
+		public ForumPerformance Performance { get; set; }
+		
+		[MaxLength(16)]
+		public string Highlight { get; set; }
+		
+		[MaxLength(256)]
+		public string ExternalUrl { get; set; }
+		
 		public virtual ICollection<ForumTag> ForumTags { get; set; }
 	}
 }
