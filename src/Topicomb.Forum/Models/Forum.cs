@@ -40,5 +40,7 @@ namespace Topicomb.Forum.Models
 		public string ExternalUrl { get; set; }
 		
 		public virtual ICollection<ForumTag> ForumTags { get; set; }
+		
+		public bool IsNoTopic { get; set; }
 	}
 }

@@ -18,6 +18,8 @@ namespace Topicomb.Forum.Models
 		public DbSet<Credit> Credits { get; set; }
 		public DbSet<CreditLog> CreditLogs { get; set; }
 		public DbSet<FriendRelation> FriendRelations { get; set; }
+		public DbSet<Folder> Folders { get; set; }
+		public DbSet<UserLog> UserLogs { get; set; }
 		
 		protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -89,8 +91,8 @@ namespace Topicomb.Forum.Models
 			builder.Entity<Credit> (e => 
 			{
 				e.Index(x => x.IsBlankedOut);
-				e.Index(x => x.IsTransferable);
 				e.Index(x => x.DisplayInProfile);
+				e.Index(x => x.PRI);
 			});
 			
 			builder.Entity<CreditLog> (e => 
@@ -104,6 +106,11 @@ namespace Topicomb.Forum.Models
 				e.Index(x => x.Time);
 				e.Index(x => x.Status);
 				e.Key(x => new { x.FriendId, x.UserId });
+			});
+			
+			builder.Entity<UserLog> (e => {
+				e.Index(x => x.Type);
+				e.Index(x => x.Time);
 			});
 		}
 	}

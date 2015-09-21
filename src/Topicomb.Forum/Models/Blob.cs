@@ -21,5 +21,10 @@ namespace Topicomb.Forum.Models
 		public long UserId { get; set; }
 		
 		public virtual User User { get; set; }
+		
+		[ForeignKey("Folder")]
+		public Guid? FolderId { get; set; }
+		
+		public virtual Folder Folder { get; set; }
 	}
 }
