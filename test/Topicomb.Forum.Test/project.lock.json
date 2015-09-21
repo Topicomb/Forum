@@ -140,6 +140,24 @@
           "lib/dnx451/EntityFramework.Core.dll": {}
         }
       },
+      "EntityFramework.InMemory/7.0.0-beta8-15723": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta8-15723"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.InMemory.dll": {}
+        }
+      },
       "EntityFramework.Relational/7.0.0-beta8-15723": {
         "type": "package",
         "dependencies": {
@@ -1923,6 +1941,7 @@
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
           "CodeComb.vNext": "1.0.41-beta8-15793",
+          "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
           "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8-15793",
@@ -2144,6 +2163,18 @@
         },
         "runtime": {
           "lib/dotnet/EntityFramework.Core.dll": {}
+        }
+      },
+      "EntityFramework.InMemory/7.0.0-beta8-15723": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta8-15723"
+        },
+        "compile": {
+          "lib/dotnet/EntityFramework.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/EntityFramework.InMemory.dll": {}
         }
       },
       "EntityFramework.Relational/7.0.0-beta8-15723": {
@@ -5165,6 +5196,7 @@
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
           "CodeComb.vNext": "1.0.41-beta8-15793",
+          "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
           "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8-15793",
@@ -5456,6 +5488,24 @@
           "lib/dnx451/EntityFramework.Core.dll": {}
         }
       },
+      "EntityFramework.InMemory/7.0.0-beta8-15723": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta8-15723"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.InMemory.dll": {}
+        }
+      },
       "EntityFramework.Relational/7.0.0-beta8-15723": {
         "type": "package",
         "dependencies": {
@@ -7239,6 +7289,7 @@
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
           "CodeComb.vNext": "1.0.41-beta8-15793",
+          "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
           "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8-15793",
@@ -7485,6 +7536,24 @@
           "lib/dnx451/EntityFramework.Core.dll": {}
         }
       },
+      "EntityFramework.InMemory/7.0.0-beta8-15723": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta8-15723"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.InMemory.dll": {}
+        }
+      },
       "EntityFramework.Relational/7.0.0-beta8-15723": {
         "type": "package",
         "dependencies": {
@@ -9268,6 +9337,7 @@
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
           "CodeComb.vNext": "1.0.41-beta8-15793",
+          "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
           "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8-15793",
@@ -9489,6 +9559,18 @@
         },
         "runtime": {
           "lib/dotnet/EntityFramework.Core.dll": {}
+        }
+      },
+      "EntityFramework.InMemory/7.0.0-beta8-15723": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta8-15723"
+        },
+        "compile": {
+          "lib/dotnet/EntityFramework.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/EntityFramework.InMemory.dll": {}
         }
       },
       "EntityFramework.Relational/7.0.0-beta8-15723": {
@@ -12510,6 +12592,7 @@
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
           "CodeComb.vNext": "1.0.41-beta8-15793",
+          "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
           "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8-15793",
@@ -12778,6 +12861,18 @@
           "lib/dotnet/EntityFramework.Core.dll": {}
         }
       },
+      "EntityFramework.InMemory/7.0.0-beta8-15723": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta8-15723"
+        },
+        "compile": {
+          "lib/dotnet/EntityFramework.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/EntityFramework.InMemory.dll": {}
+        }
+      },
       "EntityFramework.Relational/7.0.0-beta8-15723": {
         "type": "package",
         "dependencies": {
@@ -15797,6 +15892,7 @@
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
           "CodeComb.vNext": "1.0.41-beta8-15793",
+          "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
           "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8-15793",
@@ -16035,6 +16131,20 @@
         "lib/dotnet/EntityFramework.Core.xml",
         "lib/net45/EntityFramework.Core.dll",
         "lib/net45/EntityFramework.Core.xml"
+      ]
+    },
+    "EntityFramework.InMemory/7.0.0-beta8-15723": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "2OvkSHYfGTTERdhUJrwsUQvML6hX/Yzvu+M/lz4E8KSUdJbWYA0qpGgknY4ZJd8TBmitui1+3du79nIskFFEow==",
+      "files": [
+        "EntityFramework.InMemory.7.0.0-beta8-15723.nupkg",
+        "EntityFramework.InMemory.7.0.0-beta8-15723.nupkg.sha512",
+        "EntityFramework.InMemory.nuspec",
+        "lib/dotnet/EntityFramework.InMemory.dll",
+        "lib/dotnet/EntityFramework.InMemory.xml",
+        "lib/net45/EntityFramework.InMemory.dll",
+        "lib/net45/EntityFramework.InMemory.xml"
       ]
     },
     "EntityFramework.Relational/7.0.0-beta8-15723": {
@@ -19683,6 +19793,7 @@
       "Topicomb.Forum ",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta8-15793",
       "Microsoft.Framework.Logging.Testing >= 1.0.0-beta8-15575",
+      "EntityFramework.InMemory >= 7.0.0-beta8-15723",
       "xunit.runner.aspnet >= 2.0.0-aspnet-beta8-15599"
     ],
     "DNX,Version=v4.5.1": [],

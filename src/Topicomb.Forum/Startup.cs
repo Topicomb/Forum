@@ -47,6 +47,11 @@ namespace Topicomb.Forum
                         .AddSqlServer()
                         .AddDbContext<ForumContext> (x => x.UseSqlServer(Configuration["Database:ConnectionString"].Replace("{AppRoot}", appEnv.ApplicationBasePath)));
                     break;
+                case "InMemory":
+                    services.AddEntityFramework()
+                        .AddInMemoryDatabase()
+                        .AddDbContext<ForumContext> (x => x.UseInMemoryDatabase());
+                        break;
                 default:
                     throw new DatabaseNotSupportedException(Configuration["Database:Mode"]);
             }

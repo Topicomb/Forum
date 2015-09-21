@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using Microsoft.Data.Entity;
 using Microsoft.Framework.Caching.Memory;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -18,6 +19,10 @@ namespace Topicomb.Forum.Test
         {
             var services = new ServiceCollection();
             
+            services.AddEntityFramework()
+               .AddInMemoryDatabase()
+               .AddDbContext<ForumContext> (x => x.UseInMemoryDatabase());
+            
             services.AddIdentity<User, IdentityRole<long>>()
                 .AddEntityFrameworkStores<ForumContext, long>()
                 .AddDefaultTokenProviders();
@@ -29,6 +34,8 @@ namespace Topicomb.Forum.Test
             services.AddCodeCombLocalizationJsonDictionary();
             
             this.services = services.BuildServiceProvider();
+            
+            SampleData.InitDB(this.services).Wait();
         }
     }
 }
