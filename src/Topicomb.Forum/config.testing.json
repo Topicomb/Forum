@@ -1,6 +1,6 @@
 {
 	"Database": {
-		"Mode": "SQLite",
+		"Mode": "InMemory",
 		"ConnectionString": "Data source={AppRoot}/Database/forum.db"
 	},
 	

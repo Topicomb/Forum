@@ -5,7 +5,9 @@
     "Microsoft.Framework.Logging.Testing": "1.0.0-beta8-15575",
     "EntityFramework.InMemory": "7.0.0-beta8-15723",
     "xunit.runner.aspnet": "2.0.0-aspnet-beta8-15599",
-    "Microsoft.AspNet.TestHost": "1.0.0-beta8-15618"
+    "Microsoft.AspNet.TestHost": "1.0.0-beta8-15618",
+    "CodeComb.HtmlAgilityPack": "1.0.1",
+    "Microsoft.AspNet.Testing": "1.0.0-beta8-15602"
   },
 
   "commands": {

@@ -21,20 +21,17 @@ namespace Topicomb.Forum
     {
         public static IConfiguration Configuration { get; set; }
         
-        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
-        {
+        public void ConfigureServices(IServiceCollection services)
+        {  
+            var _services = services.BuildServiceProvider();
+            var appEnv = _services.GetRequiredService<IApplicationEnvironment>(); 
+            var env = _services.GetRequiredService<IHostingEnvironment>();
+            
             var builder = new ConfigurationBuilder(appEnv.ApplicationBasePath)
                 .AddJsonFile("config.json")
                 .AddJsonFile($"config.{env.EnvironmentName}.json", optional: true);
-
-            builder.AddEnvironmentVariables();
             Configuration = builder.Build();
-        }
-        
-        public void ConfigureServices(IServiceCollection services)
-        {  
-            var appEnv = services.BuildServiceProvider().GetRequiredService<IApplicationEnvironment>(); 
-
+            
             switch(Configuration["Database:Mode"])
             {
                 case "SQLite":
@@ -67,7 +64,7 @@ namespace Topicomb.Forum
             services.AddCodeCombLocalizationJsonDictionary();
         }
 
-        public async void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public async void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
             loggerFactory.MinimumLevel = LogLevel.Information;
             loggerFactory.AddConsole();

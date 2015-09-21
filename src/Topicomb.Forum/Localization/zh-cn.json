@@ -22,6 +22,8 @@
     "SetTopicAsTop": "设置主题置顶",
     "SetTopicAsDigest": "设置主题为精华帖",
     "SetTopicHighlight": "设置主题高亮",
-    "CommentWithCredits": "对主题评分"
+    "CommentWithCredits": "对主题评分",
+    "Login Failed": "登录失败",
+    "Checking your user name or password and retry.":  "请检查你的用户名密码输入是否正确，更正后再试！"
   } 
 }
