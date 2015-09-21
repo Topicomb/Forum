@@ -50,5 +50,7 @@ namespace Topicomb.Forum.Models
 		public virtual Topic Parent { get; set; }
 		
 		public virtual ICollection<VoteOption> VoteOptions { get; set; } = new List<VoteOption> ();
+	
+		public virtual ICollection<TopicEvaluate> Evaluates { get; set; } = new List<TopicEvaluate> ();
 	}
 }

@@ -20,6 +20,8 @@ namespace Topicomb.Forum.Models
 		public DbSet<FriendRelation> FriendRelations { get; set; }
 		public DbSet<Folder> Folders { get; set; }
 		public DbSet<UserLog> UserLogs { get; set; }
+		public DbSet<TopicEvaluate> TopicEvaluates { get; set; }
+		public DbSet<TopicEvaluateDetail> TopicEvaluateDetials { get; set; }
 		
 		protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -110,6 +112,11 @@ namespace Topicomb.Forum.Models
 			
 			builder.Entity<UserLog> (e => {
 				e.Index(x => x.Type);
+				e.Index(x => x.Time);
+			});
+			
+			builder.Entity<TopicEvaluate> (e => 
+			{
 				e.Index(x => x.Time);
 			});
 		}

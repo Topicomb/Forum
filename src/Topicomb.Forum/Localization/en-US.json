@@ -1,0 +1,12 @@
+{
+  "lang": [ "en-US", "en-GB", "us", "gb" ],
+  "dictionary": {
+    "Blocked": "Blocked",
+    "Verifying": "Verifying",
+    "Friending": "Friending",
+    "Navigator": "Navigator",
+    "Friendly": "Friendly Links",
+    "PlainTopic": "Topic",
+    "VoteTopic": "Vote"
+  } 
+}

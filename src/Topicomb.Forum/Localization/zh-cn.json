@@ -1,6 +1,27 @@
 ﻿{
   "lang": [ "zh-CN", "zh-Hans-CN", "zh" ],
   "dictionary": {
-    "Home": ""
+    "Blocked": "黑名单",
+    "Verifying": "等待身份确认",
+    "Friending": "好友",
+    "Navigator": "导航栏",
+    "Friendly": "友情链接",
+    "PlainTopic": "帖子",
+    "VoteTopic": "投票",
+    "SignIn": "登录",
+    "SignOut": "注销登录",
+    "ResetPassword": "修改密码",
+    "ForgotPassword": "找回密码",
+    "CreditsTransfer": "积分转出",
+    "CreditsIncome": "积分转入",
+    "RemoveTopic": "删除主题",
+    "RemoveReply": "删除回复",
+    "RemoveFriend": "删除好友",
+    "BlockFriend": "加入黑名单",
+    "AcceptFriend": "接受好友请求",
+    "SetTopicAsTop": "设置主题置顶",
+    "SetTopicAsDigest": "设置主题为精华帖",
+    "SetTopicHighlight": "设置主题高亮",
+    "CommentWithCredits": "对主题评分"
   } 
 }
