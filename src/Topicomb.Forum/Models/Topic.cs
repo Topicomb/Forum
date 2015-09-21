@@ -39,6 +39,11 @@ namespace Topicomb.Forum.Models
 		
 		public virtual User User { get; set; }
 		
+		[ForeignKey("LastReplyUser")]
+		public long? LastReplyUserId { get; set; }
+		
+		public virtual User LastReplyUser { get; set; }
+		
 		[ForeignKey("Parent")]
 		public long? ParentId { get; set; }
 		
