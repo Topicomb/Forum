@@ -13,13 +13,14 @@
 		"AvatarSize": "512"
 	},
 	
-	"Password": {
+	"Security": {
 		"RequiredLength": 4,
 		"RequireDigit": false,
 		"RequireLowercase": false,
 		"RequireNonLetterOrDigit": false,
 		"RequireUppercase": false,
-		"AllowedUserNameCharacters": false
+		"AllowedUserNameCharacters": false,
+		"RequireUniqueEmail": true
 	},
 	
 	"Installation": {

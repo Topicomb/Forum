@@ -28,7 +28,7 @@ namespace Topicomb.Forum.Models
 				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Blocked" });
 				
 				// Creating Root User
-				var user = new User { UserName = Startup.Configuration["Installation:RootUserName"] };
+				var user = new User { UserName = Startup.Configuration["Installation:RootUserName"], Email = "admin@codecomb.com" };
 				var result2 = await UserManager.CreateAsync(user, Startup.Configuration["Installation:Password"]);
                 foreach (var e in result2.Errors)
                     throw new Exception(e.Description);
