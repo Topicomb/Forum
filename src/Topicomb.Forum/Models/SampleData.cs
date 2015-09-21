@@ -16,7 +16,23 @@ namespace Topicomb.Forum.Models
 			
 			if (DB.Database != null && await DB.Database.EnsureCreatedAsync())
 			{
-				// TODO: Initial the database
+				// Creating Roles
+				var result1 = await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Root" });
+
+                foreach (var e in result1.Errors)
+                    throw new Exception(e.Description);
+
+                await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Super Moderator" });
+				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Moderator" });
+				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Member" });
+				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Blocked" });
+				
+				// Creating Root User
+				var user = new User { UserName = Startup.Configuration["Installation:RootUserName"] };
+				var result2 = await UserManager.CreateAsync(user, Startup.Configuration["Installation:Password"]);
+                foreach (var e in result2.Errors)
+                    throw new Exception(e.Description);
+				await UserManager.AddToRoleAsync(user, "Root");
 			}
 		} 
 	}

@@ -4,7 +4,7 @@ using Microsoft.Data.Entity;
 
 namespace Topicomb.Forum.Models
 {
-	public class ForumContext : IdentityDbContext
+	public class ForumContext : IdentityDbContext<User, IdentityRole<long>, long>
 	{
 		public DbSet<Blob> Blobs { get; set; }
 		public DbSet<Forum> Forums { get; set; }

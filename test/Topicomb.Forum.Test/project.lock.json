@@ -876,6 +876,26 @@
           "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Json.dll": {}
         }
       },
+      "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta8-15793"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime.Serialization",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        }
+      },
       "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -2842,6 +2862,20 @@
           "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Json.dll": {}
         }
       },
+      "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta8-15793",
+          "System.Runtime.Serialization.Xml": "4.0.11-beta-23302",
+          "System.Xml.XmlSerializer": "4.0.11-beta-23302"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        }
+      },
       "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -4496,6 +4530,35 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
+      "System.Private.DataContractSerialization/4.0.1-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23302",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
+        },
+        "compile": {
+          "ref/dnxcore50/_._": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
       "System.Private.Networking/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -4744,6 +4807,32 @@
         },
         "runtime": {
           "lib/dotnet/System.Runtime.Numerics.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20"
+        },
+        "compile": {
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Xml/4.0.11-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.DataContractSerialization": "4.0.1-beta-23302",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23302"
+        },
+        "compile": {
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Runtime.Serialization.Xml.dll": {}
         }
       },
       "System.Security.Claims/4.0.1-beta-23302": {
@@ -5176,7 +5265,7 @@
           "lib/dotnet/System.Xml.XmlDocument.dll": {}
         }
       },
-      "System.Xml.XmlSerializer/4.0.11-beta-23225": {
+      "System.Xml.XmlSerializer/4.0.11-beta-23302": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -6297,6 +6386,26 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Json.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta8-15793"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime.Serialization",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
         }
       },
       "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
@@ -8391,6 +8500,26 @@
           "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Json.dll": {}
         }
       },
+      "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta8-15793"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime.Serialization",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        }
+      },
       "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -10360,6 +10489,20 @@
           "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Json.dll": {}
         }
       },
+      "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta8-15793",
+          "System.Runtime.Serialization.Xml": "4.0.11-beta-23302",
+          "System.Xml.XmlSerializer": "4.0.11-beta-23302"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        }
+      },
       "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -12060,6 +12203,35 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
+      "System.Private.DataContractSerialization/4.0.1-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23302",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
+        },
+        "compile": {
+          "ref/dnxcore50/_._": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
       "System.Private.Networking/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -12323,6 +12495,32 @@
         },
         "runtime": {
           "lib/dotnet/System.Runtime.Numerics.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20"
+        },
+        "compile": {
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Xml/4.0.11-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.DataContractSerialization": "4.0.1-beta-23302",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23302"
+        },
+        "compile": {
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Runtime.Serialization.Xml.dll": {}
         }
       },
       "System.Security.Claims/4.0.1-beta-23302": {
@@ -12755,7 +12953,7 @@
           "lib/dotnet/System.Xml.XmlDocument.dll": {}
         }
       },
-      "System.Xml.XmlSerializer/4.0.11-beta-23225": {
+      "System.Xml.XmlSerializer/4.0.11-beta-23302": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -13753,6 +13951,20 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Json.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta8-15793",
+          "System.Runtime.Serialization.Xml": "4.0.11-beta-23302",
+          "System.Xml.XmlSerializer": "4.0.11-beta-23302"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll": {}
         }
       },
       "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
@@ -15455,6 +15667,35 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
+      "System.Private.DataContractSerialization/4.0.1-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23302",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
+        },
+        "compile": {
+          "ref/dnxcore50/_._": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
       "System.Private.Networking/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
@@ -15718,6 +15959,32 @@
         },
         "runtime": {
           "lib/dotnet/System.Runtime.Numerics.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20"
+        },
+        "compile": {
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Xml/4.0.11-beta-23302": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.DataContractSerialization": "4.0.1-beta-23302",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23302"
+        },
+        "compile": {
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Runtime.Serialization.Xml.dll": {}
         }
       },
       "System.Security.Claims/4.0.1-beta-23302": {
@@ -16150,7 +16417,7 @@
           "lib/dotnet/System.Xml.XmlDocument.dll": {}
         }
       },
-      "System.Xml.XmlSerializer/4.0.11-beta-23225": {
+      "System.Xml.XmlSerializer/4.0.11-beta-23302": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -17030,6 +17297,20 @@
         "Microsoft.AspNet.Mvc.Formatters.Json.6.0.0-beta8-15793.nupkg",
         "Microsoft.AspNet.Mvc.Formatters.Json.6.0.0-beta8-15793.nupkg.sha512",
         "Microsoft.AspNet.Mvc.Formatters.Json.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Mvc.Formatters.Xml/6.0.0-beta8-15793": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "6HvaQFhmsrOe8F/Jy9gINJz9+LpaoUuLkJHhADKIXLtEuzjipr7iaJQjsr1rT3Hq3+Dh8aJk7dthgbpyeeCHgg==",
+      "files": [
+        "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.dll",
+        "lib/dnx451/Microsoft.AspNet.Mvc.Formatters.Xml.xml",
+        "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.dll",
+        "lib/dnxcore50/Microsoft.AspNet.Mvc.Formatters.Xml.xml",
+        "Microsoft.AspNet.Mvc.Formatters.Xml.6.0.0-beta8-15793.nupkg",
+        "Microsoft.AspNet.Mvc.Formatters.Xml.6.0.0-beta8-15793.nupkg.sha512",
+        "Microsoft.AspNet.Mvc.Formatters.Xml.nuspec"
       ]
     },
     "Microsoft.AspNet.Mvc.Localization/6.0.0-beta8-15793": {
@@ -18968,6 +19249,22 @@
         "System.ObjectModel.nuspec"
       ]
     },
+    "System.Private.DataContractSerialization/4.0.1-beta-23302": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "OrdsZgvJyhdr75KpwNNWeuPILKT+cbeSpAoPZdP5ObIhD+2GuDKPnoKtouPPdIVI01i+nyqxSoGTyPMNFD8J0A==",
+      "files": [
+        "lib/DNXCore50/System.Private.DataContractSerialization.dll",
+        "lib/netcore50/System.Private.DataContractSerialization.dll",
+        "ref/dnxcore50/_._",
+        "ref/netcore50/_._",
+        "runtime.json",
+        "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll",
+        "System.Private.DataContractSerialization.4.0.1-beta-23302.nupkg",
+        "System.Private.DataContractSerialization.4.0.1-beta-23302.nupkg.sha512",
+        "System.Private.DataContractSerialization.nuspec"
+      ]
+    },
     "System.Private.Networking/4.0.1-beta-23302": {
       "type": "package",
       "serviceable": true,
@@ -19425,6 +19722,52 @@
         "System.Runtime.Numerics.4.0.0.nupkg",
         "System.Runtime.Numerics.4.0.0.nupkg.sha512",
         "System.Runtime.Numerics.nuspec"
+      ]
+    },
+    "System.Runtime.Serialization.Primitives/4.0.11-beta-23302": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "RqjXauC8uc8y3nPeO0eEeUSFnwE+vTlde2nVJuLd6Kv7plcK2o/qq2OuGOQ0062RxHzHm+6mS/wzb6EZxokwAA==",
+      "files": [
+        "lib/dotnet/System.Runtime.Serialization.Primitives.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Runtime.Serialization.Primitives.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Runtime.Serialization.Primitives.4.0.11-beta-23302.nupkg",
+        "System.Runtime.Serialization.Primitives.4.0.11-beta-23302.nupkg.sha512",
+        "System.Runtime.Serialization.Primitives.nuspec"
+      ]
+    },
+    "System.Runtime.Serialization.Xml/4.0.11-beta-23302": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "6bHNTfmzU/uk4TN3VyNbbU4LCOZMRMxdH4kYYBjIo9aFljOsw9l48MeynH4l6iqJqxVWR7B04QxdHqcH8ZPmuw==",
+      "files": [
+        "lib/DNXCore50/System.Runtime.Serialization.Xml.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/_._",
+        "lib/netcore50/System.Runtime.Serialization.Xml.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Runtime.Serialization.Xml.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Xml.dll",
+        "System.Runtime.Serialization.Xml.4.0.11-beta-23302.nupkg",
+        "System.Runtime.Serialization.Xml.4.0.11-beta-23302.nupkg.sha512",
+        "System.Runtime.Serialization.Xml.nuspec"
       ]
     },
     "System.Security.Claims/4.0.1-beta-23302": {
@@ -19994,10 +20337,10 @@
         "System.Xml.XmlDocument.nuspec"
       ]
     },
-    "System.Xml.XmlSerializer/4.0.11-beta-23225": {
+    "System.Xml.XmlSerializer/4.0.11-beta-23302": {
       "type": "package",
       "serviceable": true,
-      "sha512": "8gGUxwU5R4hXO0tiD6O67P9Wqk2Z4hUDj2jhK0oHeEURldEqqe9Ivb543lJ8ysOWCJszex7zevCfdzQ0j+kXHQ==",
+      "sha512": "aLVJmiBKKGhPYAa3zaojjowvsNuFA5hBmDC6aN8Iv+UAr0WIIPOFy9ASp8oTx6VQ7kEhjxCQXC+pWU21597wXA==",
       "files": [
         "lib/DNXCore50/System.Xml.XmlSerializer.dll",
         "lib/MonoAndroid10/_._",
@@ -20014,8 +20357,8 @@
         "ref/xamarinmac20/_._",
         "runtime.json",
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll",
-        "System.Xml.XmlSerializer.4.0.11-beta-23225.nupkg",
-        "System.Xml.XmlSerializer.4.0.11-beta-23225.nupkg.sha512",
+        "System.Xml.XmlSerializer.4.0.11-beta-23302.nupkg",
+        "System.Xml.XmlSerializer.4.0.11-beta-23302.nupkg.sha512",
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
@@ -20226,8 +20569,8 @@
       "EntityFramework.InMemory >= 7.0.0-beta8-15723",
       "xunit.runner.aspnet >= 2.0.0-aspnet-beta8-15599",
       "Microsoft.AspNet.TestHost >= 1.0.0-beta8-15618",
-      "CodeComb.HtmlAgilityPack >= 1.0.1",
-      "Microsoft.AspNet.Testing >= 1.0.0-beta8-15602"
+      "Microsoft.AspNet.Testing >= 1.0.0-beta8-15602",
+      "Microsoft.AspNet.Mvc.Formatters.Xml >= 6.0.0-*"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
