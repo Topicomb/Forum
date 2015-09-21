@@ -19,7 +19,7 @@ using Microsoft.Framework.Logging.Testing;
 using CodeComb.HtmlAgilityPack;
 using Newtonsoft.Json;
 
-namespace Topicomb.Forum.Test
+namespace Topicomb.Forum.FunctionalTests
 {
     public class TestHost
     {

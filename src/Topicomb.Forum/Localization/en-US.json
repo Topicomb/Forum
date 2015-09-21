@@ -7,6 +7,23 @@
     "Navigator": "Navigator",
     "Friendly": "Friendly Links",
     "PlainTopic": "Topic",
-    "VoteTopic": "Vote"
+    "VoteTopic": "Vote",
+    "SignIn": "Sign In",
+    "SignOut": "Sign Out",
+    "ResetPassword": "Change password",
+    "ForgotPassword": "Forgot password",
+    "CreditsTransfer": "Transfer",
+    "CreditsIncome": "Income",
+    "RemoveTopic": "Remove topic",
+    "RemoveReply": "Remove reply",
+    "RemoveFriend": "Remove friend",
+    "BlockFriend": "Block friend",
+    "AcceptFriend": "Accept friend request",
+    "SetTopicAsTop": "Set top",
+    "SetTopicAsDigest": "Set digest",
+    "SetTopicHighlight": "Set highlight",
+    "CommentWithCredits": "Evaluate",
+    "Login Failed": "Login failed",
+    "Checking your user name or password and retry.":  "Checking your user name or password and retry."
   } 
 }

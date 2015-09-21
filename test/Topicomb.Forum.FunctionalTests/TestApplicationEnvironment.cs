@@ -4,7 +4,7 @@
 using System.Runtime.Versioning;
 using Microsoft.Dnx.Runtime;
 
-namespace Topicomb.Forum.Test
+namespace Topicomb.Forum.FunctionalTests
 {
     // An application environment that overrides the base path of the original
     // application environment in order to make it point to the folder of the original web
