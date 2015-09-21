@@ -1,0 +1,16 @@
+﻿{
+  "dependencies": {
+    "Topicomb.Forum": "",
+    "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
+    "Microsoft.Framework.Logging.Testing": "1.0.0-beta8-15575",
+    "xunit.runner.aspnet": "2.0.0-aspnet-beta8-15599"
+  },
+
+  "commands": {
+    "test": "xunit.runner.aspnet"
+  },
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": { }
+  }
+}

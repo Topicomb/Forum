@@ -17,6 +17,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Topicomb.Forum", "src\Topic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0C92D46A-0E9E-4531-A022-E371696E0BFA}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Topicomb.Forum.Test", "test\Topicomb.Forum.Test\Topicomb.Forum.Test.xproj", "{679EC116-7CEE-4212-8E39-CB40BAEC622C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +29,16 @@ Global
 		{DF6B43F3-8D18-496D-B795-71F7DE172875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6B43F3-8D18-496D-B795-71F7DE172875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6B43F3-8D18-496D-B795-71F7DE172875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679EC116-7CEE-4212-8E39-CB40BAEC622C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679EC116-7CEE-4212-8E39-CB40BAEC622C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679EC116-7CEE-4212-8E39-CB40BAEC622C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679EC116-7CEE-4212-8E39-CB40BAEC622C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DF6B43F3-8D18-496D-B795-71F7DE172875} = {874946DE-6561-456F-B346-28B016A4D0F5}
+		{679EC116-7CEE-4212-8E39-CB40BAEC622C} = {0C92D46A-0E9E-4531-A022-E371696E0BFA}
 	EndGlobalSection
 EndGlobal
