@@ -1,0 +1,29 @@
+{
+	"Database": {
+		"Mode": "InMemory",
+		"ConnectionString": "Data source={AppRoot}/Database/forum.db"
+	},
+	
+	"Site": {
+		"Name": "Topicomb",
+		"Description": "A forum based on ASP.Net vNext",
+		"Close": false,
+		"DefaultTemplate": "Default",
+		"AttachmentSize": "4096",
+		"AvatarSize": "512"
+	},
+	
+	"Password": {
+		"RequireDigit": false,
+		"RequireLowercase": false,
+		"RequireNonLetterOrDigit": false,
+		"RequireUppercase": false,
+		"AllowedUserNameCharacters": false
+	},
+	
+	"Installation": {
+		"WithSampleData": true,
+		"RootUserName": "admin",
+		"Password": "123456"
+	}
+}

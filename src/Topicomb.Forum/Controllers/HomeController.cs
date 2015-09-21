@@ -13,7 +13,7 @@ namespace Topicomb.Forum.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            return Content("ok");
         }
     }
 }

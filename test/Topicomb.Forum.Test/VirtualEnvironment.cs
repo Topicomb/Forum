@@ -8,6 +8,9 @@ using Microsoft.Framework.Caching.Memory;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Topicomb.Forum.Models;
+using Microsoft.Framework.Logging;
+using Microsoft.AspNet.Http;
+using Xunit;
 
 namespace Topicomb.Forum.Test
 {
@@ -18,7 +21,9 @@ namespace Topicomb.Forum.Test
         public VirtualEnvironment()
         {
             var services = new ServiceCollection();
-            
+
+            services.AddLogging();
+
             services.AddEntityFramework()
                .AddInMemoryDatabase()
                .AddDbContext<ForumContext> (x => x.UseInMemoryDatabase());
@@ -30,7 +35,6 @@ namespace Topicomb.Forum.Test
             services.AddMvc()
                 .AddTemplate();
                 
-            services.AddCurrentUser<long, User>();
             services.AddCodeCombLocalizationJsonDictionary();
             
             this.services = services.BuildServiceProvider();

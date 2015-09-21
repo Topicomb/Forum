@@ -1150,6 +1150,25 @@
           "lib/dnx451/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta8-15618"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
         "type": "package",
         "dependencies": {
@@ -3028,6 +3047,20 @@
           "lib/dnxcore50/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta8-15618",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23302",
+          "System.Net.Http": "4.0.1-beta-23302"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
         "type": "package",
         "dependencies": {
@@ -4328,7 +4361,7 @@
           "lib/dotnet/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.0.0": {
+      "System.Net.Http/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.0",
@@ -4343,8 +4376,9 @@
           "System.Runtime.Extensions": "4.0.10",
           "System.Runtime.Handles": "4.0.0",
           "System.Runtime.InteropServices": "4.0.20",
+          "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23302",
           "System.Text.Encoding": "4.0.10",
-          "System.Threading": "4.0.10",
+          "System.Threading": "4.0.0",
           "System.Threading.Tasks": "4.0.10"
         },
         "compile": {
@@ -6498,6 +6532,25 @@
           "lib/dnx451/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta8-15618"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
         "type": "package",
         "dependencies": {
@@ -8546,6 +8599,25 @@
           "lib/dnx451/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta8-15618"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
         "type": "package",
         "dependencies": {
@@ -10424,6 +10496,20 @@
           "lib/dnxcore50/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta8-15618",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23302",
+          "System.Net.Http": "4.0.1-beta-23302"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
         "type": "package",
         "dependencies": {
@@ -11724,7 +11810,7 @@
           "lib/dotnet/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.0.0": {
+      "System.Net.Http/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.0",
@@ -11739,8 +11825,9 @@
           "System.Runtime.Extensions": "4.0.10",
           "System.Runtime.Handles": "4.0.0",
           "System.Runtime.InteropServices": "4.0.20",
+          "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23302",
           "System.Text.Encoding": "4.0.10",
-          "System.Threading": "4.0.10",
+          "System.Threading": "4.0.0",
           "System.Threading.Tasks": "4.0.10"
         },
         "compile": {
@@ -13724,6 +13811,20 @@
           "lib/dnxcore50/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta8-15618",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23302",
+          "System.Net.Http": "4.0.1-beta-23302"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
         "type": "package",
         "dependencies": {
@@ -15024,7 +15125,7 @@
           "lib/dotnet/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.0.0": {
+      "System.Net.Http/4.0.1-beta-23302": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.0",
@@ -15039,8 +15140,9 @@
           "System.Runtime.Extensions": "4.0.10",
           "System.Runtime.Handles": "4.0.0",
           "System.Runtime.InteropServices": "4.0.20",
+          "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23302",
           "System.Text.Encoding": "4.0.10",
-          "System.Threading": "4.0.10",
+          "System.Threading": "4.0.0",
           "System.Threading.Tasks": "4.0.10"
         },
         "compile": {
@@ -16879,6 +16981,20 @@
         "Microsoft.AspNet.StaticFiles.nuspec"
       ]
     },
+    "Microsoft.AspNet.TestHost/1.0.0-beta8-15618": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "bGV5KXJUTSTnu4uboS9XM0MioBqSdnf8bFUzBO5TVvK307wv+PWn+YGx9A902xRNHVhRaJtz0+oXB5HIO/kEsw==",
+      "files": [
+        "lib/dnx451/Microsoft.AspNet.TestHost.dll",
+        "lib/dnx451/Microsoft.AspNet.TestHost.xml",
+        "lib/dnxcore50/Microsoft.AspNet.TestHost.dll",
+        "lib/dnxcore50/Microsoft.AspNet.TestHost.xml",
+        "Microsoft.AspNet.TestHost.1.0.0-beta8-15618.nupkg",
+        "Microsoft.AspNet.TestHost.1.0.0-beta8-15618.nupkg.sha512",
+        "Microsoft.AspNet.TestHost.nuspec"
+      ]
+    },
     "Microsoft.AspNet.Tooling.Razor/1.0.0-beta8-15611": {
       "type": "package",
       "serviceable": true,
@@ -18406,34 +18522,23 @@
         "System.Linq.Queryable.nuspec"
       ]
     },
-    "System.Net.Http/4.0.0": {
+    "System.Net.Http/4.0.1-beta-23302": {
       "type": "package",
       "serviceable": true,
-      "sha512": "mZuAl7jw/mFY8jUq4ITKECxVBh9a8SJt9BC/+lJbmo7cRKspxE3PsITz+KiaCEsexN5WYPzwBOx0oJH/0HlPyQ==",
+      "sha512": "r4RAKV9wuMvttSYVCJPQ39HvqAkVgC6Lh+eVoAQWJjox2UcDQkQ5gMfJZ6C0Lj+yFusIlcPldDOk1VH35twiDw==",
       "files": [
         "lib/DNXCore50/System.Net.Http.dll",
         "lib/net45/_._",
         "lib/netcore50/System.Net.Http.dll",
         "lib/win8/_._",
         "lib/wpa81/_._",
-        "ref/dotnet/de/System.Net.Http.xml",
-        "ref/dotnet/es/System.Net.Http.xml",
-        "ref/dotnet/fr/System.Net.Http.xml",
-        "ref/dotnet/it/System.Net.Http.xml",
-        "ref/dotnet/ja/System.Net.Http.xml",
-        "ref/dotnet/ko/System.Net.Http.xml",
-        "ref/dotnet/ru/System.Net.Http.xml",
         "ref/dotnet/System.Net.Http.dll",
-        "ref/dotnet/System.Net.Http.xml",
-        "ref/dotnet/zh-hans/System.Net.Http.xml",
-        "ref/dotnet/zh-hant/System.Net.Http.xml",
         "ref/net45/_._",
         "ref/netcore50/System.Net.Http.dll",
-        "ref/netcore50/System.Net.Http.xml",
         "ref/win8/_._",
         "ref/wpa81/_._",
-        "System.Net.Http.4.0.0.nupkg",
-        "System.Net.Http.4.0.0.nupkg.sha512",
+        "System.Net.Http.4.0.1-beta-23302.nupkg",
+        "System.Net.Http.4.0.1-beta-23302.nupkg.sha512",
         "System.Net.Http.nuspec"
       ]
     },
@@ -19794,7 +19899,8 @@
       "Microsoft.AspNet.Mvc >= 6.0.0-beta8-15793",
       "Microsoft.Framework.Logging.Testing >= 1.0.0-beta8-15575",
       "EntityFramework.InMemory >= 7.0.0-beta8-15723",
-      "xunit.runner.aspnet >= 2.0.0-aspnet-beta8-15599"
+      "xunit.runner.aspnet >= 2.0.0-aspnet-beta8-15599",
+      "Microsoft.AspNet.TestHost >= 1.0.0-beta8-15618"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
