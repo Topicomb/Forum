@@ -23,11 +23,14 @@ namespace Topicomb.Forum.Test
             var result = await client.GetAsync("/Account/Login");
 
             // Arrange
-			var html = GetHtml(await result.Content.ReadAsStringAsync());
-            var csrf = html.DocumentNode.GetRequestVerificationToken("frmLogin");
-            
+            var cookieToken = RetrieveAntiforgeryCookie(result);
+            var csrf = RetrieveAntiforgeryToken(await result.Content.ReadAsStringAsync(), "Account/Login");
+
             // Act 2
-            result = await client.PostAsync("/Account/Login", PostData(new { Username = "admin", Password = "123456", __RequestVerificationToken = csrf }));
+            var request = new HttpRequestMessage(HttpMethod.Post, "/Account/Login");
+            request.Headers.Add("Cookie", cookieToken.Key + "=" + cookieToken.Value);
+            request.Content = PostUrl(new { Username = "admin", Password = "123456", __RequestVerificationToken = csrf });
+            result = await client.SendAsync(request);
 
             // Assert
             Assert.True(result.IsSuccessStatusCode);
@@ -42,16 +45,17 @@ namespace Topicomb.Forum.Test
             var result = await client.GetAsync("/Account/Login");
 
             // Arrange
-			var html = GetHtml(await result.Content.ReadAsStringAsync());
-            var csrf = html.DocumentNode.GetRequestVerificationToken("frmLogin");
+            var cookieToken = RetrieveAntiforgeryCookie(result);
+            var csrf = RetrieveAntiforgeryToken(await result.Content.ReadAsStringAsync(), "Account/Login");
 
             // Act 2
-            result = await client.PostAsync("/Account/Login", PostData(new { Username = "admin", Password = "000000", __RequestVerificationToken = csrf }));
-
+            var request = new HttpRequestMessage(HttpMethod.Post, "/Account/Login");
+            request.Headers.Add("Cookie", cookieToken.Key + "=" + cookieToken.Value);
+            request.Content = PostUrl(new { Username = "admin", Password = "000000", __RequestVerificationToken = csrf });
+            result = await client.SendAsync(request);
+            
             // Assert
-            Assert.True(result.IsSuccessStatusCode);
-            Assert.Equal(System.Net.HttpStatusCode.Redirect, result.StatusCode);
-            Assert.Equal("/", await result.Content.ReadAsStringAsync());
+            Assert.Equal(System.Net.HttpStatusCode.Forbidden, result.StatusCode);
         }
     }
 }
