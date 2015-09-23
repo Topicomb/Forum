@@ -17,11 +17,7 @@ namespace Topicomb.Forum.Models
 			if (DB.Database != null && await DB.Database.EnsureCreatedAsync())
 			{
 				// Creating Roles
-				var result1 = await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Root" });
-
-                foreach (var e in result1.Errors)
-                    throw new Exception(e.Description);
-
+				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Root" });
                 await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Super Moderator" });
 				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Moderator" });
 				await RoleManager.CreateAsync(new IdentityRole<long> { Name = "Member" });

@@ -14,8 +14,7 @@ namespace Topicomb.Forum.Controllers
     {
         public IActionResult Index()
         {
-            var env = Resolver.GetService<IApplicationEnvironment> ();
-            return Content(env.ApplicationBasePath);
+            return Content(DB.Users.Count().ToString());
         }
     }
 }
