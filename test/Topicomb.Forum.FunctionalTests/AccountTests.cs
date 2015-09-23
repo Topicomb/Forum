@@ -14,7 +14,7 @@ using Xunit;
 
 namespace Topicomb.Forum.FunctionalTests
 {
-    public class AccountControllerTests : TestHost
+    public class AccountTests : TestHost
     {
         [Fact]
         public async Task Login_Failed_Test()

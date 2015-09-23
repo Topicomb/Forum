@@ -1,17 +1,11 @@
 ﻿{
   "dependencies": {
     "Topicomb.Forum": "",
-    "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-    "Microsoft.Framework.Logging.Testing": "1.0.0-beta8-15575",
-    "EntityFramework.InMemory": "7.0.0-beta8-15723",
-    "xunit.runner.aspnet": "2.0.0-aspnet-beta8-15599",
-    "Microsoft.AspNet.TestHost": "1.0.0-beta8-15618",
-    "Microsoft.AspNet.Testing": "1.0.0-beta8-15602",
-    "Microsoft.AspNet.Mvc.Formatters.Xml": "6.0.0-*"
+    "CodeComb.TestHost": "1.0.0-beta8-15793"
   },
 
   "commands": {
-    "test": "xunit.runner.aspnet"
+    "functest": "xunit.runner.aspnet"
   },
   "frameworks": {
     "dnx451": { },

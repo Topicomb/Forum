@@ -26,7 +26,7 @@ namespace Topicomb.Forum
             var _services = services.BuildServiceProvider();
             var appEnv = _services.GetRequiredService<IApplicationEnvironment>(); 
             var env = _services.GetRequiredService<IHostingEnvironment>();
-            
+
             var builder = new ConfigurationBuilder(appEnv.ApplicationBasePath)
                 .AddJsonFile("config.json")
                 .AddJsonFile($"config.{env.EnvironmentName}.json", optional: true);
