@@ -49,6 +49,8 @@ namespace Topicomb.Forum.Models
 		
 		public virtual Topic Parent { get; set; }
 		
+		public virtual ICollection<Topic> Posts { get; set; } = new List<Topic> ();
+		
 		public virtual ICollection<VoteOption> VoteOptions { get; set; } = new List<VoteOption> ();
 	
 		public virtual ICollection<TopicEvaluate> Evaluates { get; set; } = new List<TopicEvaluate> ();
