@@ -99,7 +99,7 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.Testing/1.0.3-beta8-15793": {
+      "CodeComb.Testing/1.0.4-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.TestHost": "1.0.1-beta8-15793",
@@ -2258,7 +2258,7 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.Testing/1.0.3-beta8-15793": {
+      "CodeComb.Testing/1.0.4-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.TestHost": "1.0.1-beta8-15793",
@@ -4417,7 +4417,7 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.Testing/1.0.3-beta8-15793": {
+      "CodeComb.Testing/1.0.4-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.TestHost": "1.0.1-beta8-15793",
@@ -6550,12 +6550,12 @@
         "lib/dnxcore50/CodeComb.TestHost.xml"
       ]
     },
-    "CodeComb.Testing/1.0.3-beta8-15793": {
+    "CodeComb.Testing/1.0.4-beta8-15793": {
       "type": "package",
-      "sha512": "i3Wx9AB9E7E7krRItCed1Xaa4CGsGoLLmzWhbZ9vsmjLHgZY6ZjhIX+mIAJAgB8x4aKLasuGzxfDO8dAvgTeOg==",
+      "sha512": "52gzWidYAYjV/xhzB5dyeBkSG0LeVS4028jB9rsOPOMy65hmgouMBYhzmAPjV2rpGWeslbvmlyl82fvtrq/blQ==",
       "files": [
-        "CodeComb.Testing.1.0.3-beta8-15793.nupkg",
-        "CodeComb.Testing.1.0.3-beta8-15793.nupkg.sha512",
+        "CodeComb.Testing.1.0.4-beta8-15793.nupkg",
+        "CodeComb.Testing.1.0.4-beta8-15793.nupkg.sha512",
         "CodeComb.Testing.nuspec",
         "lib/dnx451/CodeComb.Testing.dll",
         "lib/dnx451/CodeComb.Testing.xml"
@@ -8340,7 +8340,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Topicomb.Forum ",
-      "CodeComb.Testing >= 1.0.3-beta8-15793",
+      "CodeComb.Testing >= 1.0.4-beta8-15793",
       "Moq >= 4.2.1312.1622"
     ],
     "DNX,Version=v4.5.1": []

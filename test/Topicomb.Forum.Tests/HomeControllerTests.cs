@@ -21,11 +21,9 @@ namespace Topicomb.Forum.Tests
         public void index_action()
         {
             // Arrange
-            var services = GenerateServiceCollection();
-            IServiceProvider provider;
-            var httpContext = GenerateContext(services, out provider);
-            var scheme = new IdentityOptions().Cookies.ApplicationCookieAuthenticationScheme;
-            var db = provider.GetRequiredService<ForumContext> ();
+            var services = GenerateServiceProvider();
+            var db = services.GetRequiredService<ForumContext> ();
+            var httpContext = services.GetRequiredService<IHttpContextAccessor> ().HttpContext;
             var theory = db.Forums
                 .Include(x => x.SubForums)
                 .Where(x => x.ParentId == null)

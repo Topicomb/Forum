@@ -31,13 +31,12 @@ namespace Topicomb.Forum.Tests
         public async Task database_init_test()
         {
             // Arrange
-            var services = GenerateServiceCollection();
-            var provider = services.BuildServiceProvider();
-            var db = provider.GetRequiredService<ForumContext>();
-            var roleManager = provider.GetRequiredService<RoleManager<IdentityRole<long>>>();
+            var services = GenerateServiceProvider();
+            var db = services.GetRequiredService<ForumContext>();
+            var roleManager = services.GetRequiredService<RoleManager<IdentityRole<long>>>();
 
             // Act
-            await SampleData.InitDB(provider);
+            await SampleData.InitDB(services);
 
             // Assert
             Assert.NotNull(db.Database);
