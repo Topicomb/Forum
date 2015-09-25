@@ -18,7 +18,7 @@ namespace Topicomb.Forum.Models
 		public string Description { get; set; }
 		
 		[ForeignKey("Parent")]
-		public long ParentId { get; set; }
+		public long? ParentId { get; set; }
 		
 		public Forum Parent { get; set; }
 		
@@ -39,8 +39,10 @@ namespace Topicomb.Forum.Models
 		[MaxLength(256)]
 		public string ExternalUrl { get; set; }
 		
-		public virtual ICollection<ForumTag> ForumTags { get; set; }
-		
 		public bool IsNoTopic { get; set; }
+		
+		public virtual ICollection<ForumTag> ForumTags { get; set; } = new List<ForumTag> ();
+		
+		public virtual ICollection<Forum> SubForums { get; set; } = new List<Forum> ();
 	}
 }
