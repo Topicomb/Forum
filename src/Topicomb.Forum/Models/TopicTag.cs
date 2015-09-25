@@ -7,7 +7,7 @@ namespace Topicomb.Forum.Models
 	public class TopicTag
 	{
 		[ForeignKey("Topic")]
-		public Guid TopicId { get; set; }
+		public long TopicId { get; set; }
 		
 		public virtual Topic Topic { get; set; }
 		

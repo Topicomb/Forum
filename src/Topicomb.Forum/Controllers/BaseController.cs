@@ -9,5 +9,10 @@ namespace Topicomb.Forum.Controllers
 {
     public class BaseController : BaseController<User, ForumContext, long>
     {
+        protected override void Prepare()
+        {
+            base.Prepare();
+            ViewBag.Config = Startup.Configuration;
+        }
     }
 }

@@ -1826,10 +1826,10 @@
           "lib/dnx451/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15585": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15562",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "frameworkAssemblies": [
@@ -2161,7 +2161,7 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/darwin-x86": {
+    "DNX,Version=v4.5.1/win7-x86": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -3499,6 +3499,9 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.Data.Sqlite.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -3985,10 +3988,10 @@
           "lib/dnx451/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15585": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15562",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "frameworkAssemblies": [
@@ -4320,7 +4323,7 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/darwin-x64": {
+    "DNX,Version=v4.5.1/win7-x64": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -5658,6 +5661,9 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.Data.Sqlite.dll": {}
+        },
+        "native": {
+          "runtimes/win/native/x86/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -6144,10 +6150,10 @@
           "lib/dnx451/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15585": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15562",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "frameworkAssemblies": [
@@ -7884,10 +7890,10 @@
         "Microsoft.Framework.Logging.Debug.nuspec"
       ]
     },
-    "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15585": {
+    "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
       "type": "package",
       "serviceable": true,
-      "sha512": "UJU/qQPIRANftQrLMUaZbTd4DKlL+jDuCJZ5KQ2M1BhGxLGYhtP6zlpipl8vfIvaLBIqOzMd0ftTxbCR4zxiNA==",
+      "sha512": "MD+pJV78HvJHeSRR07MQcMV8DLTQY1/6ytQkZj6vJw+srI7+Ni/jIA8vNu2iqnTnssnIi94Hu5JVR+CPIS3o5w==",
       "files": [
         "lib/dnx451/Microsoft.Framework.Logging.Testing.dll",
         "lib/dnx451/Microsoft.Framework.Logging.Testing.xml",
@@ -7895,10 +7901,9 @@
         "lib/dnxcore50/Microsoft.Framework.Logging.Testing.xml",
         "lib/net45/Microsoft.Framework.Logging.Testing.dll",
         "lib/net45/Microsoft.Framework.Logging.Testing.xml",
-        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15585.nupkg",
-        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15585.nupkg.sha512",
-        "Microsoft.Framework.Logging.Testing.nuspec",
-        "repo.json"
+        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15592.nupkg",
+        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15592.nupkg.sha512",
+        "Microsoft.Framework.Logging.Testing.nuspec"
       ]
     },
     "Microsoft.Framework.OptionsModel/1.0.0-beta8-15574": {

@@ -1,4 +1,7 @@
 ﻿@using Topicomb.Forum.Models
 @using Topicomb.Forum.ViewModels
 @using Microsoft.AspNet.Http
+@using Microsoft.AspNet.Identity
 @addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+@inject Microsoft.Framework.DependencyInjection.User<long, User, UserManager<User>> User
+@inject Microsoft.Framework.DependencyInjection.CodeCombLocalization _

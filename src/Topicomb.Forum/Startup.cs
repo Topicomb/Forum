@@ -91,7 +91,7 @@ namespace Topicomb.Forum
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseCodeCombLocalization("/assets/shared/localization.js");
+            app.UseCodeCombLocalization("/assets/shared/scripts/localization.js");
 
             await SampleData.InitDB(app.ApplicationServices);
         }

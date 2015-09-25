@@ -16,7 +16,7 @@ namespace Topicomb.Forum.FunctionalTests
         [Fact]
         public async Task Localization_JS_Test()
         {
-            var result = await client.GetStringAsync("/assets/shared/localization.js");
+            var result = await client.GetStringAsync("/assets/shared/scripts/localization.js");
             Assert.NotEmpty(result);
             Assert.True(result.IndexOf("__dictionary =") >= 0);
             Assert.True(result.IndexOf("__replaceAll") >= 0);

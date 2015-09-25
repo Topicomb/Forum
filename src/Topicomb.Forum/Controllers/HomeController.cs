@@ -14,7 +14,7 @@ namespace Topicomb.Forum.Controllers
     {
         public IActionResult Index()
         {
-            return Content(DB.Users.Count().ToString());
+            return View();
         }
     }
 }
