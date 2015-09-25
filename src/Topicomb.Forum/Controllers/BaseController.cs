@@ -12,7 +12,6 @@ namespace Topicomb.Forum.Controllers
         public override void Prepare()
         {
             base.Prepare();
-            ViewBag.Config = Startup.Configuration;
         }
     }
 }

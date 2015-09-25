@@ -118,13 +118,14 @@
           "lib/dnx451/CodeComb.Testing.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.43-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -2051,7 +2052,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.43-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -2277,13 +2278,14 @@
           "lib/dnx451/CodeComb.Testing.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.43-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -4210,7 +4212,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.43-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -4436,13 +4438,14 @@
           "lib/dnx451/CodeComb.Testing.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.43-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -6369,7 +6372,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.43-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -6561,12 +6564,12 @@
         "lib/dnx451/CodeComb.Testing.xml"
       ]
     },
-    "CodeComb.vNext/1.0.43-beta8-15793": {
+    "CodeComb.vNext/1.0.44-beta8-15793": {
       "type": "package",
-      "sha512": "adzXcaphaD+Har1HTvqAYWRaudFQWBh7ZpXfkL52Rq+pOUGz3Kz0Sk3nuNV5gXZv7PgPZ7egbsoXhtxU9aX1kg==",
+      "sha512": "ZwwTOJ/KpcHsBnWqvA/mblvo740/pKpDcRNBE4IgGUe+DpB+39tJulmk2ixHVDkF+FIJJBtBrU0iGsbkVCcSfw==",
       "files": [
-        "CodeComb.vNext.1.0.43-beta8-15793.nupkg",
-        "CodeComb.vNext.1.0.43-beta8-15793.nupkg.sha512",
+        "CodeComb.vNext.1.0.44-beta8-15793.nupkg",
+        "CodeComb.vNext.1.0.44-beta8-15793.nupkg.sha512",
         "CodeComb.vNext.nuspec",
         "lib/dnx451/CodeComb.vNext.dll",
         "lib/dnx451/CodeComb.vNext.xml",

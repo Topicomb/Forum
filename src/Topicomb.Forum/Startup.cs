@@ -19,18 +19,12 @@ namespace Topicomb.Forum
 {
     public class Startup
     {
-        public static IConfiguration Configuration { get; set; }
-        
         public void ConfigureServices(IServiceCollection services)
         {  
             var _services = services.BuildServiceProvider();
-            var appEnv = _services.GetRequiredService<IApplicationEnvironment>(); 
-            var env = _services.GetRequiredService<IHostingEnvironment>();
-
-            var builder = new ConfigurationBuilder(appEnv.ApplicationBasePath)
-                .AddJsonFile("config.json")
-                .AddJsonFile($"config.{env.EnvironmentName}.json", optional: true);
-            Configuration = builder.Build();
+            var appEnv = _services.GetRequiredService<IApplicationEnvironment>();
+            IConfiguration Configuration;
+            services.AddConfiguration(out Configuration);
             
             switch(Configuration["Database:Mode"])
             {

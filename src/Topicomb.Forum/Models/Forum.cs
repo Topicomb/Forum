@@ -25,7 +25,7 @@ namespace Topicomb.Forum.Models
 		public string Password { get; set; }
 		
 		[ForeignKey("Blob")]
-		public Guid IconId { get; set; }
+		public Guid? IconId { get; set; }
 		
 		public int PRI { get; set; }
 		

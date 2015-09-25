@@ -37,6 +37,7 @@ namespace Topicomb.Forum.Tests
 
             // Act
             await SampleData.InitDB(services);
+            
 
             // Assert
             Assert.NotNull(db.Database);
@@ -47,7 +48,6 @@ namespace Topicomb.Forum.Tests
             Assert.True(await roleManager.RoleExistsAsync("Blocked"));
             Assert.Equal(1, db.Users.Count());
             Assert.Equal("admin", db.Users.First().UserName);
-
         }
     }
 }
