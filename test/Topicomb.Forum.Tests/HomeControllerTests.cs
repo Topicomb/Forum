@@ -23,16 +23,8 @@ namespace Topicomb.Forum.Tests
             // Arrange
             var services = GenerateServiceCollection();
             IServiceProvider provider;
-            var user = new Mock<ClaimsPrincipal>();
-            user.Setup(x => x.Identities).Returns(new List<ClaimsIdentity>());
-            var httpContext = GenerateContext(services, x => 
-            {
-                x.Setup(y => y.User)
-                    .Returns(user.Object);
-            }, out provider);
+            var httpContext = GenerateContext(services, out provider);
             var scheme = new IdentityOptions().Cookies.ApplicationCookieAuthenticationScheme;
-            // var user = new ClaimsPrincipal(new ClaimsIdentity(scheme));
-            httpContext.User = user.Object;
             var db = provider.GetRequiredService<ForumContext> ();
             var theory = db.Forums
                 .Include(x => x.SubForums)
