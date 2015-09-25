@@ -1,4 +1,5 @@
 ﻿{
+  "title": "简体中文",
   "lang": [ "zh-CN", "zh-Hans-CN", "zh" ],
   "dictionary": {
     "Blocked": "黑名单",
@@ -24,6 +25,12 @@
     "SetTopicHighlight": "设置主题高亮",
     "CommentWithCredits": "对主题评分",
     "Login Failed": "登录失败",
-    "Checking your user name or password and retry.":  "请检查你的用户名密码输入是否正确，更正后再试！"
+    "Checking your user name or password and retry.": "请检查你的用户名密码输入是否正确，更正后再试！",
+    "Home": "主页",
+    "Forum": "论坛",
+    "Topics": "主题",
+    "Posts": "回复",
+    "Sign In": "登录",
+    "Sign Out": "注销"
   } 
 }

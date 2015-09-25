@@ -1,4 +1,5 @@
 {
+  "title": "English",
   "lang": [ "en-US", "en-GB", "us", "gb" ],
   "dictionary": {
     "Blocked": "Blocked",
@@ -24,6 +25,12 @@
     "SetTopicHighlight": "Set highlight",
     "CommentWithCredits": "Evaluate",
     "Login Failed": "Login failed",
-    "Checking your user name or password and retry.":  "Checking your user name or password and retry."
+    "Checking your user name or password and retry.":  "Checking your user name or password and retry.",
+    "Home": "Home",
+    "Forum": "Forum",
+    "Topics": "Topics",
+    "Posts": "Posts",
+    "Sign In": "Sign In",
+    "Sign Out": "Sign Out"
   } 
 }

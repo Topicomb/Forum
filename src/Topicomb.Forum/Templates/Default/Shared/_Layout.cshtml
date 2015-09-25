@@ -8,6 +8,9 @@
 		<link href="~/assets/@Html.GetTemplateFolder()/styles/site.css" rel="stylesheet" type="text/css" media="screen, projection" />
 		<link href="~/assets/@Html.GetTemplateFolder()/styles/colors.css" rel="stylesheet" type="text/css" media="screen, projection" />
 		<link id="colour-variant" href="" rel="stylesheet" type="text/css" media="screen, projection" />
+		<script src="~/assets/shared/scripts/jquery-1.11.3.min.js"></script>
+		<script src="~/assets/shared/scripts/localization.js"></script>
+		<script src="~/assets/@Html.GetTemplateFolder()/scripts/site.js"></script>
 	</head>
 	<body>
 		<div id="overall-wrap">
@@ -22,7 +25,7 @@
 							<div class="pointer"><div class="pointer-inner"></div></div>
 							<ul class="dropdown-contents dropdown-nonscroll" role="menu" style="margin-left: 0px; left: 0px; max-width: 1327px;">
 								
-																	<li class="separator"></li>
+									<li class="separator"></li>
 																																				<li class="font-icon icon-search-unanswered"><a href="./search.php?style=2&amp;search_id=unanswered" role="menuitem"><i class="fa fa-file-o"></i>Unanswered posts</a></li>
 									<li class="font-icon icon-search-active"><a href="./search.php?style=2&amp;search_id=active_topics" role="menuitem"><i class="fa fa-fire"></i>Active topics</a></li>
 																<li class="separator site-menu"></li>
@@ -43,7 +46,7 @@
 					</li>
 
 										
-									<li class="font-icon rightside" data-skip-responsive="true"><a href="./ucp.php?style=2&amp;mode=login" title="Login" accesskey="x" role="menuitem"><i class="fa fa-power-off"></i><span class="nav-rh-2">Login</span></a></li>
+									<li class="font-icon rightside" data-skip-responsive="true"><a asp-action="Login" asp-controller="Account" title="Login" accesskey="x" role="menuitem"><i class="fa fa-power-off"></i><span class="nav-rh-2">@_.c("Sign In")</span></a></li>
 																		</ul>
 			</div>
 		</div>
@@ -51,7 +54,7 @@
 		<div id="site-header" role="banner">
 			<div class="chunk">
 				<div id="site-logo">
-					<a asp-action="Index" asp-controller="Home" title="Home"><img class="logo" src="~/assets/@Html.GetTemplateFolder()/images/logo.png"></a>
+					<a asp-action="Index" asp-controller="Home" title="@_.c("Home")"><img class="logo" src="~/assets/@Html.GetTemplateFolder()/images/logo.png"></a>
 				</div>
 
 				<ul id="site-menu">
