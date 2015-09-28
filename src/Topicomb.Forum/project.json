@@ -14,9 +14,9 @@
     "Microsoft.Framework.Logging": "1.0.0-beta8-15575",
     "Microsoft.Framework.Logging.Console": "1.0.0-beta8-15575",
     "Microsoft.Framework.Logging.Debug" : "1.0.0-beta8-15575",
-    "CodeComb.AntiXSS": "1.0.9-beta8-15793",
-    "CodeComb.Marked": "1.0.4-beta8-15793",
-    "CodeComb.vNext": "1.0.44-beta8-15793",
+    "CodeComb.AntiXSS": "1.0.9-beta8-15875",
+    "CodeComb.Marked": "1.0.4-beta8-15875",
+    "CodeComb.vNext": "1.0.44-beta8-15875",
     "EntityFramework.Sqlite": "7.0.0-beta8-15723",
     "EntityFramework.InMemory": "7.0.0-beta8-15723"
   },
