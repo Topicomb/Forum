@@ -99,13 +99,14 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.41-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -1807,10 +1808,10 @@
           "lib/dnx451/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15571",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "frameworkAssemblies": [
@@ -2023,7 +2024,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.41-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -2211,13 +2212,14 @@
           "lib/dnxcore50/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.41-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "compile": {
           "lib/dnxcore50/CodeComb.vNext.dll": {}
@@ -3726,10 +3728,10 @@
           "lib/dotnet/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15571",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "compile": {
@@ -5397,7 +5399,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.41-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -5649,13 +5651,14 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.41-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -7360,10 +7363,10 @@
           "lib/dnx451/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15571",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "frameworkAssemblies": [
@@ -7576,7 +7579,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.41-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -7783,13 +7786,14 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.41-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -9494,10 +9498,10 @@
           "lib/dnx451/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15571",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "frameworkAssemblies": [
@@ -9710,7 +9714,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.41-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -9898,13 +9902,14 @@
           "lib/dnxcore50/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.41-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "compile": {
           "lib/dnxcore50/CodeComb.vNext.dll": {}
@@ -11416,10 +11421,10 @@
           "lib/dotnet/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15571",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "compile": {
@@ -13145,7 +13150,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.41-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -13378,13 +13383,14 @@
           "lib/dnxcore50/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.41-beta8-15793": {
+      "CodeComb.vNext/1.0.44-beta8-15793": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.5-beta8-15793",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8-15714",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
-          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611"
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8-15611",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15586"
         },
         "compile": {
           "lib/dnxcore50/CodeComb.vNext.dll": {}
@@ -14896,10 +14902,10 @@
           "lib/dotnet/Microsoft.Framework.Logging.Debug.dll": {}
         }
       },
-      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+      "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15569",
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15571",
           "xunit.assert": "2.1.0-rc1-build3168"
         },
         "compile": {
@@ -16625,7 +16631,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.9-beta8-15793",
           "CodeComb.Marked": "1.0.4-beta8-15793",
-          "CodeComb.vNext": "1.0.41-beta8-15793",
+          "CodeComb.vNext": "1.0.44-beta8-15793",
           "EntityFramework.InMemory": "7.0.0-beta8-15723",
           "EntityFramework.Sqlite": "7.0.0-beta8-15723",
           "Microsoft.AspNet.Mvc": "6.0.0-beta8-15793",
@@ -16851,12 +16857,12 @@
         "lib/dnxcore50/CodeComb.TestHost.xml"
       ]
     },
-    "CodeComb.vNext/1.0.41-beta8-15793": {
+    "CodeComb.vNext/1.0.44-beta8-15793": {
       "type": "package",
-      "sha512": "0givK4VxRGib0NehqgEnSDe54zdDIDj3AqpEE8+p/Du/0rJ+B1C5b5AAd49+MYl05ETZkcMNADlcTYYBQ67Xag==",
+      "sha512": "ZwwTOJ/KpcHsBnWqvA/mblvo740/pKpDcRNBE4IgGUe+DpB+39tJulmk2ixHVDkF+FIJJBtBrU0iGsbkVCcSfw==",
       "files": [
-        "CodeComb.vNext.1.0.41-beta8-15793.nupkg",
-        "CodeComb.vNext.1.0.41-beta8-15793.nupkg.sha512",
+        "CodeComb.vNext.1.0.44-beta8-15793.nupkg",
+        "CodeComb.vNext.1.0.44-beta8-15793.nupkg.sha512",
         "CodeComb.vNext.nuspec",
         "lib/dnx451/CodeComb.vNext.dll",
         "lib/dnx451/CodeComb.vNext.xml",
@@ -17290,7 +17296,7 @@
     "Microsoft.AspNet.Loader.IIS/1.0.0-beta8-15609": {
       "type": "package",
       "serviceable": true,
-      "sha512": "DechUBKA8zTybIZH6iw42h4oovY0i/RwERnmHG3Tno1IHK8qDAtjRfZYHw8ZFhEf6dGVXbDmaYHyyR7UXXpxYg==",
+      "sha512": "AhQGxJoeaDY087yO8HP+s/IRR+VpKm6c2c40Ir27wcwGXIRFFfNH/3KU3il9T+M4+gf1RyVXmxNXfpMgMupsyw==",
       "files": [
         "lib/dnx451/Microsoft.AspNet.Loader.IIS.dll",
         "lib/dnx451/Microsoft.AspNet.Loader.IIS.xml",
@@ -17304,7 +17310,7 @@
     "Microsoft.AspNet.Loader.IIS.Interop/1.0.0-beta8-15609": {
       "type": "package",
       "serviceable": true,
-      "sha512": "hXhZOlz8bOO6lKJdGBwgpatEJnVvS7mzCgY30S18mxuCWN0Hckl5zRQ7sfdrRIAIbWNnBGe+r93QKbXwHRnSkA==",
+      "sha512": "Z7joZLm2pIRFGQHNPGmC1HLO301A6PHXKigFRYspk7noNilDbDopiK8fWTyn0jo6042KDAN9g5dJ6HDrHbXv5w==",
       "files": [
         "InteropAssemblies/amd64/Microsoft.AspNet.Loader.IIS.Interop.dll",
         "InteropAssemblies/x86/Microsoft.AspNet.Loader.IIS.Interop.dll",
@@ -17588,7 +17594,7 @@
     },
     "Microsoft.AspNet.Server.IIS/1.0.0-beta8-15609": {
       "type": "package",
-      "sha512": "XpIO+gJq7e++o9UhuWjGIFstL4yTkgUVSSWMr9lpjAFpmVAdAgLhfybLHhH4wI/Y2N2wehXsxEjB8KaNv52R7Q==",
+      "sha512": "+13RzxmJnGEozFwr6B982dyheNVQZsdNN6hDUI3EnHpd3/Z6tC0lyrqZ+7O8TwAgkex6p63bQG4qIRXrS89W6Q==",
       "files": [
         "Microsoft.AspNet.Server.IIS.1.0.0-beta8-15609.nupkg",
         "Microsoft.AspNet.Server.IIS.1.0.0-beta8-15609.nupkg.sha512",
@@ -18204,10 +18210,10 @@
         "Microsoft.Framework.Logging.Debug.nuspec"
       ]
     },
-    "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15592": {
+    "Microsoft.Framework.Logging.Testing/1.0.0-beta8-15595": {
       "type": "package",
       "serviceable": true,
-      "sha512": "MD+pJV78HvJHeSRR07MQcMV8DLTQY1/6ytQkZj6vJw+srI7+Ni/jIA8vNu2iqnTnssnIi94Hu5JVR+CPIS3o5w==",
+      "sha512": "tcuxUAc0I+PRx/MYNmEcHEB5T51e7MFbB3bQzNrkypD4XJzC79BhOXcoO0oa59nekAnm70MW8UkUGTSfuGkf2Q==",
       "files": [
         "lib/dnx451/Microsoft.Framework.Logging.Testing.dll",
         "lib/dnx451/Microsoft.Framework.Logging.Testing.xml",
@@ -18215,8 +18221,8 @@
         "lib/dnxcore50/Microsoft.Framework.Logging.Testing.xml",
         "lib/net45/Microsoft.Framework.Logging.Testing.dll",
         "lib/net45/Microsoft.Framework.Logging.Testing.xml",
-        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15592.nupkg",
-        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15592.nupkg.sha512",
+        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15595.nupkg",
+        "Microsoft.Framework.Logging.Testing.1.0.0-beta8-15595.nupkg.sha512",
         "Microsoft.Framework.Logging.Testing.nuspec"
       ]
     },

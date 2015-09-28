@@ -2162,7 +2162,7 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/darwin-x86": {
+    "DNX,Version=v4.5.1/win7-x86": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -3501,6 +3501,9 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.Data.Sqlite.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -4322,7 +4325,7 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/darwin-x64": {
+    "DNX,Version=v4.5.1/win7-x64": {
       "CodeComb.AntiXSS/1.0.9-beta8-15793": {
         "type": "package",
         "dependencies": {
@@ -5661,6 +5664,9 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.Data.Sqlite.dll": {}
+        },
+        "native": {
+          "runtimes/win/native/x86/sqlite3.dll": {}
         }
       },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8-15618": {
@@ -7003,7 +7009,7 @@
     "Microsoft.AspNet.Loader.IIS/1.0.0-beta8-15609": {
       "type": "package",
       "serviceable": true,
-      "sha512": "DechUBKA8zTybIZH6iw42h4oovY0i/RwERnmHG3Tno1IHK8qDAtjRfZYHw8ZFhEf6dGVXbDmaYHyyR7UXXpxYg==",
+      "sha512": "AhQGxJoeaDY087yO8HP+s/IRR+VpKm6c2c40Ir27wcwGXIRFFfNH/3KU3il9T+M4+gf1RyVXmxNXfpMgMupsyw==",
       "files": [
         "lib/dnx451/Microsoft.AspNet.Loader.IIS.dll",
         "lib/dnx451/Microsoft.AspNet.Loader.IIS.xml",
@@ -7017,7 +7023,7 @@
     "Microsoft.AspNet.Loader.IIS.Interop/1.0.0-beta8-15609": {
       "type": "package",
       "serviceable": true,
-      "sha512": "hXhZOlz8bOO6lKJdGBwgpatEJnVvS7mzCgY30S18mxuCWN0Hckl5zRQ7sfdrRIAIbWNnBGe+r93QKbXwHRnSkA==",
+      "sha512": "Z7joZLm2pIRFGQHNPGmC1HLO301A6PHXKigFRYspk7noNilDbDopiK8fWTyn0jo6042KDAN9g5dJ6HDrHbXv5w==",
       "files": [
         "InteropAssemblies/amd64/Microsoft.AspNet.Loader.IIS.Interop.dll",
         "InteropAssemblies/x86/Microsoft.AspNet.Loader.IIS.Interop.dll",
@@ -7301,7 +7307,7 @@
     },
     "Microsoft.AspNet.Server.IIS/1.0.0-beta8-15609": {
       "type": "package",
-      "sha512": "XpIO+gJq7e++o9UhuWjGIFstL4yTkgUVSSWMr9lpjAFpmVAdAgLhfybLHhH4wI/Y2N2wehXsxEjB8KaNv52R7Q==",
+      "sha512": "+13RzxmJnGEozFwr6B982dyheNVQZsdNN6hDUI3EnHpd3/Z6tC0lyrqZ+7O8TwAgkex6p63bQG4qIRXrS89W6Q==",
       "files": [
         "Microsoft.AspNet.Server.IIS.1.0.0-beta8-15609.nupkg",
         "Microsoft.AspNet.Server.IIS.1.0.0-beta8-15609.nupkg.sha512",
