@@ -1,6 +1,3 @@
 {
-  "projects": ["src", "test"],
-  "sdk": {
-    "version": "1.0.0-beta8-15618"
-  }
+  "projects": ["src", "test"]
 }
