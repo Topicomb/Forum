@@ -1,11 +1,11 @@
 ﻿{
   "dependencies": {
     "Topicomb.Forum": "",
-    "CodeComb.TestHost": "1.0.0-beta8-15793"
+    "CodeComb.TestHost": "1.0.1-rc1-15928"
   },
 
   "commands": {
-    "functest": "xunit.runner.aspnet"
+    "test": "xunit.runner.aspnet"
   },
   "frameworks": {
     "dnx451": { },

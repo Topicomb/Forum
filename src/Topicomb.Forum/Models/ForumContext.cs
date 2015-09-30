@@ -29,10 +29,8 @@ namespace Topicomb.Forum.Models
 
             builder.Entity<User>(e =>
             {
-                e.Collection(x => x.Sent)
-                    .InverseReference(x => x.Sender);
-                e.Collection(x => x.Received)
-                    .InverseReference(x => x.Receiver);
+                e.HasMany(x => x.Sent);
+                e.HasMany(x => x.Received);
             });
 
 			builder.Entity<Blob> (e =>
@@ -75,7 +73,7 @@ namespace Topicomb.Forum.Models
 			
 			builder.Entity<TopicTag> (e =>
 			{
-				e.Key(x => new { x.ForumTagId, x.TopicId });
+				e.HasKey(x => new { x.ForumTagId, x.TopicId });
 			});
 			
 			builder.Entity<Link> (e =>
@@ -107,7 +105,7 @@ namespace Topicomb.Forum.Models
 			{
 				e.Index(x => x.Time);
 				e.Index(x => x.Status);
-				e.Key(x => new { x.FriendId, x.UserId });
+				e.HasKey(x => new { x.FriendId, x.UserId });
 			});
 			
 			builder.Entity<UserLog> (e => {
@@ -119,6 +117,14 @@ namespace Topicomb.Forum.Models
 			{
 				e.Index(x => x.Time);
 			});
+
+            builder.Entity<PrivateMessage>(e =>
+            {
+                e.HasOne(x => x.Sender)
+                    .WithMany(x => x.Sent);
+                e.HasOne(x => x.Receiver)
+                    .WithMany(x => x.Received);
+            });
 		}
 	}
 }
