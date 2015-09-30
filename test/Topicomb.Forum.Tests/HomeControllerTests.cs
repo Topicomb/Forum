@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using Microsoft.AspNet.Mvc.ActionResults;
+using Microsoft.AspNet.Mvc;
+using Microsoft.AspNet.Mvc.Abstractions;
 using Microsoft.AspNet.Http;
 using Microsoft.Data.Entity;
 using Microsoft.Framework.DependencyInjection;
@@ -33,7 +34,7 @@ namespace Topicomb.Forum.Tests
             // Act
             var controller = new HomeController
             {
-                ActionContext = new Microsoft.AspNet.Mvc.ActionContext(httpContext, new Microsoft.AspNet.Routing.RouteData(), new Microsoft.AspNet.Mvc.Actions.ActionDescriptor())
+                ActionContext = new ActionContext(httpContext, new Microsoft.AspNet.Routing.RouteData(), new ActionDescriptor())
             };
             controller.Prepare();
             var result = controller.Index() as ViewResult;
