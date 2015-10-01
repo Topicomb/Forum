@@ -8,7 +8,6 @@ using Microsoft.Framework.Caching.Memory;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.AspNet.TestHost;
 using Topicomb.Forum.Models;
-using CodeComb.HtmlAgilityPack;
 using Newtonsoft.Json;
 using Xunit;
 
@@ -17,7 +16,7 @@ namespace Topicomb.Forum.FunctionalTests
     public class AccountTests : TestHost
     {
         [Fact]
-        public async Task Login_Failed_Test()
+        public async Task login_failed_test()
         {
             // Act 1
             var result = await client.GetAsync("/Account/Login");
@@ -37,7 +36,7 @@ namespace Topicomb.Forum.FunctionalTests
         }
         
         [Fact]
-        public async Task Login_Succeeded_Test()
+        public async Task login_succeeded_test()
         {
             // Act 1
             var result = await client.GetAsync("/Account/Login");
@@ -58,7 +57,7 @@ namespace Topicomb.Forum.FunctionalTests
         }
         
         [Fact(Skip = "The frontend works are not finished.")]
-        public async Task Logout_After_Login_Test()
+        public async Task logout_after_login_test()
         {
             // Act 1
             var result = await client.GetAsync("/Account/Login");
