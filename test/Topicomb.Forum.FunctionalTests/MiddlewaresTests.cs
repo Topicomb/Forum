@@ -14,7 +14,7 @@ namespace Topicomb.Forum.FunctionalTests
     public class MiddlewaresTests : TestHost
     {
         [Fact]
-        public async Task Localization_JS_Test()
+        public async Task localization_js_test()
         {
             var result = await client.GetStringAsync("/assets/shared/scripts/localization.js");
             Assert.NotEmpty(result);
