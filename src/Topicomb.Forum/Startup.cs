@@ -75,6 +75,7 @@ namespace Topicomb.Forum
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
 
+            app.UseIISPlatformHandler();
             app.UseIdentity();
             app.UseStaticFiles();
             
