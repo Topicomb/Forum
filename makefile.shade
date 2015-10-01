@@ -1,5 +1,4 @@
 use namespace="System.Net"
-use namespace="System.Xml"
 
 var VERSION='0.1'
 var FULL_VERSION='0.1'

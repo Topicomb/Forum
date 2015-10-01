@@ -12,8 +12,6 @@
     "Microsoft.Framework.Logging.Console": "1.0.0-rc1-15634",
     "Microsoft.Framework.Logging.Debug": "1.0.0-rc1-15634",
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-15613",
-    "CodeComb.AntiXSS": "1.0.9-rc1-15938",
-    "CodeComb.Marked": "1.0.4-rc1-15938",
     "CodeComb.vNext": "1.0.45-rc1-15938",
     "EntityFramework.InMemory": "7.0.0-rc1-15865",
     "EntityFramework.Sqlite": "7.0.0-rc1-15855"
