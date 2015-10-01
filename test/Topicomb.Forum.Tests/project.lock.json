@@ -2128,10 +2128,7 @@
           "Microsoft.Framework.Logging": "1.0.0-rc1-15634",
           "Microsoft.Framework.Logging.Console": "1.0.0-rc1-15634",
           "Microsoft.Framework.Logging.Debug": "1.0.0-rc1-15634"
-        },
-        "frameworkAssemblies": [
-          "System.Xml"
-        ]
+        }
       },
       "xunit.abstractions/2.0.0": {
         "type": "package",
@@ -4363,10 +4360,7 @@
           "Microsoft.Framework.Logging": "1.0.0-rc1-15634",
           "Microsoft.Framework.Logging.Console": "1.0.0-rc1-15634",
           "Microsoft.Framework.Logging.Debug": "1.0.0-rc1-15634"
-        },
-        "frameworkAssemblies": [
-          "System.Xml"
-        ]
+        }
       },
       "xunit.abstractions/2.0.0": {
         "type": "package",
@@ -6598,10 +6592,7 @@
           "Microsoft.Framework.Logging": "1.0.0-rc1-15634",
           "Microsoft.Framework.Logging.Console": "1.0.0-rc1-15634",
           "Microsoft.Framework.Logging.Debug": "1.0.0-rc1-15634"
-        },
-        "frameworkAssemblies": [
-          "System.Xml"
-        ]
+        }
       },
       "xunit.abstractions/2.0.0": {
         "type": "package",
