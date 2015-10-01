@@ -3,6 +3,41 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -20,6 +55,24 @@
         },
         "runtime": {
           "lib/dnx451/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -2031,6 +2084,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -2144,6 +2199,42 @@
       }
     },
     "DNXCore,Version=v5.0": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23225",
+          "System.Collections": "4.0.11-beta-23225",
+          "System.Linq": "4.0.1-beta-23225",
+          "System.Runtime": "4.0.21-beta-23225",
+          "System.Threading": "4.0.11-beta-23225",
+          "System.Xml.ReaderWriter": "4.0.11-beta-23225",
+          "System.Xml.XDocument": "4.0.11-beta-23225",
+          "System.Xml.XmlDocument": "4.0.1-beta-23225",
+          "System.Xml.XmlSerializer": "4.0.11-beta-23225",
+          "System.Xml.XPath": "4.0.1-beta-23225",
+          "System.Xml.XPath.XDocument": "4.0.1-beta-23225",
+          "System.Xml.XPath.XmlDocument": "4.0.1-beta-23225"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -2155,6 +2246,18 @@
         },
         "runtime": {
           "lib/dnxcore50/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -4879,7 +4982,7 @@
           "lib/DNXCore50/System.Threading.Timer.dll": {}
         }
       },
-      "System.Xml.ReaderWriter/4.0.10": {
+      "System.Xml.ReaderWriter/4.0.11-beta-23225": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -4927,7 +5030,7 @@
           "lib/dotnet/System.Xml.XDocument.dll": {}
         }
       },
-      "System.Xml.XmlDocument/4.0.0": {
+      "System.Xml.XmlDocument/4.0.1-beta-23225": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -4975,10 +5078,73 @@
           "lib/DNXCore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "System.Xml.XPath/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.dll": {}
+        }
+      },
+      "System.Xml.XPath.XDocument/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XDocument": "4.0.10",
+          "System.Xml.XPath": "4.0.1-beta-23225"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.XDocument.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "System.Xml.XPath.XmlDocument/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlDocument": "4.0.0",
+          "System.Xml.XPath": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.XmlDocument.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
       "Topicomb.Forum/1.0.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -5135,6 +5301,41 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -5152,6 +5353,24 @@
         },
         "runtime": {
           "lib/dnx451/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -7169,6 +7388,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -7282,6 +7503,41 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -7299,6 +7555,24 @@
         },
         "runtime": {
           "lib/dnx451/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -9316,6 +9590,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -9429,6 +9705,42 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x86": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23225",
+          "System.Collections": "4.0.11-beta-23225",
+          "System.Linq": "4.0.1-beta-23225",
+          "System.Runtime": "4.0.21-beta-23225",
+          "System.Threading": "4.0.11-beta-23225",
+          "System.Xml.ReaderWriter": "4.0.11-beta-23225",
+          "System.Xml.XDocument": "4.0.11-beta-23225",
+          "System.Xml.XmlDocument": "4.0.1-beta-23225",
+          "System.Xml.XmlSerializer": "4.0.11-beta-23225",
+          "System.Xml.XPath": "4.0.1-beta-23225",
+          "System.Xml.XPath.XDocument": "4.0.1-beta-23225",
+          "System.Xml.XPath.XmlDocument": "4.0.1-beta-23225"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -9440,6 +9752,18 @@
         },
         "runtime": {
           "lib/dnxcore50/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -12627,7 +12951,7 @@
           "lib/DNXCore50/System.Threading.Timer.dll": {}
         }
       },
-      "System.Xml.ReaderWriter/4.0.10": {
+      "System.Xml.ReaderWriter/4.0.11-beta-23225": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -12675,7 +12999,7 @@
           "lib/dotnet/System.Xml.XDocument.dll": {}
         }
       },
-      "System.Xml.XmlDocument/4.0.0": {
+      "System.Xml.XmlDocument/4.0.1-beta-23225": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -12723,10 +13047,73 @@
           "lib/DNXCore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "System.Xml.XPath/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.dll": {}
+        }
+      },
+      "System.Xml.XPath.XDocument/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XDocument": "4.0.10",
+          "System.Xml.XPath": "4.0.1-beta-23225"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.XDocument.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "System.Xml.XPath.XmlDocument/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlDocument": "4.0.0",
+          "System.Xml.XPath": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.XmlDocument.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
       "Topicomb.Forum/1.0.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -12883,6 +13270,42 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x64": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23225",
+          "System.Collections": "4.0.11-beta-23225",
+          "System.Linq": "4.0.1-beta-23225",
+          "System.Runtime": "4.0.21-beta-23225",
+          "System.Threading": "4.0.11-beta-23225",
+          "System.Xml.ReaderWriter": "4.0.11-beta-23225",
+          "System.Xml.XDocument": "4.0.11-beta-23225",
+          "System.Xml.XmlDocument": "4.0.1-beta-23225",
+          "System.Xml.XmlSerializer": "4.0.11-beta-23225",
+          "System.Xml.XPath": "4.0.1-beta-23225",
+          "System.Xml.XPath.XDocument": "4.0.1-beta-23225",
+          "System.Xml.XPath.XmlDocument": "4.0.1-beta-23225"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -12894,6 +13317,18 @@
         },
         "runtime": {
           "lib/dnxcore50/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "compile": {
+          "lib/dnxcore50/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -16081,7 +16516,7 @@
           "lib/DNXCore50/System.Threading.Timer.dll": {}
         }
       },
-      "System.Xml.ReaderWriter/4.0.10": {
+      "System.Xml.ReaderWriter/4.0.11-beta-23225": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -16129,7 +16564,7 @@
           "lib/dotnet/System.Xml.XDocument.dll": {}
         }
       },
-      "System.Xml.XmlDocument/4.0.0": {
+      "System.Xml.XmlDocument/4.0.1-beta-23225": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -16177,10 +16612,73 @@
           "lib/DNXCore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "System.Xml.XPath/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.dll": {}
+        }
+      },
+      "System.Xml.XPath.XDocument/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XDocument": "4.0.10",
+          "System.Xml.XPath": "4.0.1-beta-23225"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.XDocument.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "System.Xml.XPath.XmlDocument/4.0.1-beta-23225": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlDocument": "4.0.0",
+          "System.Xml.XPath": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Xml.XPath.XmlDocument.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
       "Topicomb.Forum/1.0.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -16342,6 +16840,32 @@
       "type": "project",
       "path": "../../src/Topicomb.Forum/project.json"
     },
+    "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+      "type": "package",
+      "sha512": "WjqcJpcRjmhEQ5BXzjiYdeUpV2jLjOUn5XrCv5nQ71prgQZI1Wg4GPDxx9I8XWzzAWRkzsN8Mp/4ZeO5rlxQDw==",
+      "files": [
+        "CodeComb.AntiXSS.1.0.10-rc1-15938.nupkg",
+        "CodeComb.AntiXSS.1.0.10-rc1-15938.nupkg.sha512",
+        "CodeComb.AntiXSS.nuspec",
+        "lib/dnx451/CodeComb.AntiXSS.dll",
+        "lib/dnx451/CodeComb.AntiXSS.xml",
+        "lib/dnxcore50/CodeComb.AntiXSS.dll",
+        "lib/dnxcore50/CodeComb.AntiXSS.xml"
+      ]
+    },
+    "CodeComb.HtmlAgilityPack/1.0.3": {
+      "type": "package",
+      "sha512": "Y00pXtcBVP2wKpUUV5PUAmzwBZRsjnJgSgQOO+ciVAZuss2Jjaiixs4n+IDMUHXvOSgFaC7aGSJqGS3TXQQAdw==",
+      "files": [
+        "CodeComb.HtmlAgilityPack.1.0.3.nupkg",
+        "CodeComb.HtmlAgilityPack.1.0.3.nupkg.sha512",
+        "CodeComb.HtmlAgilityPack.nuspec",
+        "lib/dnx451/CodeComb.HtmlAgilityPack.dll",
+        "lib/dnx451/CodeComb.HtmlAgilityPack.xml",
+        "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll",
+        "lib/dnxcore50/CodeComb.HtmlAgilityPack.xml"
+      ]
+    },
     "CodeComb.Localization/1.0.6-rc1-15938": {
       "type": "package",
       "sha512": "H5M5feCjrTSVz+GXx1Lli7jL1U+cJypv2RIMR4/Pv1jQOlD3YikZ0S0Om26zXzNHL46dKw6cVRNBUwWeWI0rCg==",
@@ -16353,6 +16877,19 @@
         "lib/dnx451/CodeComb.Localization.xml",
         "lib/dnxcore50/CodeComb.Localization.dll",
         "lib/dnxcore50/CodeComb.Localization.xml"
+      ]
+    },
+    "CodeComb.Marked/1.0.4-rc1-15938": {
+      "type": "package",
+      "sha512": "5tEfZD1aUmrKJvZNOxH0jgfnTyr4gLbUmswZhX6hxHSQq1ndJaZa+VcoEIi8LIWVIUgGWOFIkzhRgUF2GDQ0mw==",
+      "files": [
+        "CodeComb.Marked.1.0.4-rc1-15938.nupkg",
+        "CodeComb.Marked.1.0.4-rc1-15938.nupkg.sha512",
+        "CodeComb.Marked.nuspec",
+        "lib/dnx451/CodeComb.Marked.dll",
+        "lib/dnx451/CodeComb.Marked.xml",
+        "lib/dnxcore50/CodeComb.Marked.dll",
+        "lib/dnxcore50/CodeComb.Marked.xml"
       ]
     },
     "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -21496,10 +22033,10 @@
         "System.Threading.Timer.nuspec"
       ]
     },
-    "System.Xml.ReaderWriter/4.0.10": {
+    "System.Xml.ReaderWriter/4.0.11-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "VdmWWMH7otrYV7D+cviUo7XjX0jzDnD/lTGSZTlZqfIQ5PhXk85j+6P0TK9od3PnOd5ZIM+pOk01G/J+3nh9/w==",
+      "sha512": "ObCcU3hOf8Cbn3BwzUjxbaqa+UnSVN6bxf5l9A9iVrzuzbYUkVkjB+/JN/O5lmwpYwiKzYO5fv91O53PZ0hgXw==",
       "files": [
         "lib/dotnet/System.Xml.ReaderWriter.dll",
         "lib/MonoAndroid10/_._",
@@ -21507,24 +22044,14 @@
         "lib/net46/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
-        "ref/dotnet/de/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/es/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/fr/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/it/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/ja/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/ko/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/ru/System.Xml.ReaderWriter.xml",
         "ref/dotnet/System.Xml.ReaderWriter.dll",
-        "ref/dotnet/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/zh-hans/System.Xml.ReaderWriter.xml",
-        "ref/dotnet/zh-hant/System.Xml.ReaderWriter.xml",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net46/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
-        "System.Xml.ReaderWriter.4.0.10.nupkg",
-        "System.Xml.ReaderWriter.4.0.10.nupkg.sha512",
+        "System.Xml.ReaderWriter.4.0.11-beta-23225.nupkg",
+        "System.Xml.ReaderWriter.4.0.11-beta-23225.nupkg.sha512",
         "System.Xml.ReaderWriter.nuspec"
       ]
     },
@@ -21560,10 +22087,10 @@
         "System.Xml.XDocument.nuspec"
       ]
     },
-    "System.Xml.XmlDocument/4.0.0": {
+    "System.Xml.XmlDocument/4.0.1-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "H5qTx2+AXgaKE5wehU1ZYeYPFpp/rfFh69/937NvwCrDqbIkvJRmIFyKKpkoMI6gl9hGfuVizfIudVTMyowCXw==",
+      "sha512": "Q2XGKmufC/hYvmW28rU/629bSDaMTtkgW/hVyXhVymOshyA/TEeNxSGL670Hd9wJfsGJ9Vo2NIQkRIzHAQZ7KQ==",
       "files": [
         "lib/dotnet/System.Xml.XmlDocument.dll",
         "lib/MonoAndroid10/_._",
@@ -21571,24 +22098,14 @@
         "lib/net46/System.Xml.XmlDocument.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
-        "ref/dotnet/de/System.Xml.XmlDocument.xml",
-        "ref/dotnet/es/System.Xml.XmlDocument.xml",
-        "ref/dotnet/fr/System.Xml.XmlDocument.xml",
-        "ref/dotnet/it/System.Xml.XmlDocument.xml",
-        "ref/dotnet/ja/System.Xml.XmlDocument.xml",
-        "ref/dotnet/ko/System.Xml.XmlDocument.xml",
-        "ref/dotnet/ru/System.Xml.XmlDocument.xml",
         "ref/dotnet/System.Xml.XmlDocument.dll",
-        "ref/dotnet/System.Xml.XmlDocument.xml",
-        "ref/dotnet/zh-hans/System.Xml.XmlDocument.xml",
-        "ref/dotnet/zh-hant/System.Xml.XmlDocument.xml",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net46/System.Xml.XmlDocument.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
-        "System.Xml.XmlDocument.4.0.0.nupkg",
-        "System.Xml.XmlDocument.4.0.0.nupkg.sha512",
+        "System.Xml.XmlDocument.4.0.1-beta-23225.nupkg",
+        "System.Xml.XmlDocument.4.0.1-beta-23225.nupkg.sha512",
         "System.Xml.XmlDocument.nuspec"
       ]
     },
@@ -21645,6 +22162,70 @@
         "System.Xml.XmlSerializer.4.0.11-beta-23326.nupkg",
         "System.Xml.XmlSerializer.4.0.11-beta-23326.nupkg.sha512",
         "System.Xml.XmlSerializer.nuspec"
+      ]
+    },
+    "System.Xml.XPath/4.0.1-beta-23225": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "bLTIPj4CmVMqcWMx80dhVcyAUbZzgceadDc/MyNFI+W0ZjnTLUPSpWNOgm+UkcPuxmad26h3Nx5szaCkX9isUA==",
+      "files": [
+        "lib/dotnet/System.Xml.XPath.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Xml.XPath.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Xml.XPath.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Xml.XPath.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Xml.XPath.4.0.1-beta-23225.nupkg",
+        "System.Xml.XPath.4.0.1-beta-23225.nupkg.sha512",
+        "System.Xml.XPath.nuspec"
+      ]
+    },
+    "System.Xml.XPath.XDocument/4.0.1-beta-23225": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "cmsmepNyRkBmXKgfEULTE46oT9UTB6x4DiJdOemyD4QIF/WswLiyZ5QoAYVefhJwBaIVFKoQmIYxs41ZuNxkaA==",
+      "files": [
+        "lib/dotnet/System.Xml.XPath.XDocument.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Xml.XPath.XDocument.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Xml.XPath.XDocument.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Xml.XPath.XDocument.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Xml.XPath.XDocument.4.0.1-beta-23225.nupkg",
+        "System.Xml.XPath.XDocument.4.0.1-beta-23225.nupkg.sha512",
+        "System.Xml.XPath.XDocument.nuspec"
+      ]
+    },
+    "System.Xml.XPath.XmlDocument/4.0.1-beta-23225": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "NyGIYbjnJ0Pr+wbunJ7f5aoIdh1gZ3LskSz7i7iI2V3e7LbYJ2lmudSddcsYF88g1ZnJOhxxAQLai46oVFABZQ==",
+      "files": [
+        "lib/dotnet/System.Xml.XPath.XmlDocument.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Xml.XPath.XmlDocument.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Xml.XPath.XmlDocument.4.0.1-beta-23225.nupkg",
+        "System.Xml.XPath.XmlDocument.4.0.1-beta-23225.nupkg.sha512",
+        "System.Xml.XPath.XmlDocument.nuspec"
       ]
     },
     "xunit.abstractions/2.0.0": {

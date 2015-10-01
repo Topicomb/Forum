@@ -3,6 +3,41 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -20,6 +55,24 @@
         },
         "runtime": {
           "lib/dnx451/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -2059,6 +2112,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -2172,6 +2227,41 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -2189,6 +2279,24 @@
         },
         "runtime": {
           "lib/dnx451/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -4234,6 +4342,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -4347,6 +4457,41 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
+      "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "CodeComb.HtmlAgilityPack": "1.0.3",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.AntiXSS.dll": {}
+        }
+      },
+      "CodeComb.HtmlAgilityPack/1.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.HtmlAgilityPack.dll": {}
+        }
+      },
       "CodeComb.Localization/1.0.6-rc1-15938": {
         "type": "package",
         "dependencies": {
@@ -4364,6 +4509,24 @@
         },
         "runtime": {
           "lib/dnx451/CodeComb.Localization.dll": {}
+        }
+      },
+      "CodeComb.Marked/1.0.4-rc1-15938": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/CodeComb.Marked.dll": {}
         }
       },
       "CodeComb.TestHost/1.0.1-rc1-15928": {
@@ -6409,6 +6572,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
+          "CodeComb.AntiXSS": "1.0.10-rc1-15938",
+          "CodeComb.Marked": "1.0.4-rc1-15938",
           "CodeComb.vNext": "1.0.45-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15855",
@@ -6527,6 +6692,32 @@
       "type": "project",
       "path": "../../src/Topicomb.Forum/project.json"
     },
+    "CodeComb.AntiXSS/1.0.10-rc1-15938": {
+      "type": "package",
+      "sha512": "WjqcJpcRjmhEQ5BXzjiYdeUpV2jLjOUn5XrCv5nQ71prgQZI1Wg4GPDxx9I8XWzzAWRkzsN8Mp/4ZeO5rlxQDw==",
+      "files": [
+        "CodeComb.AntiXSS.1.0.10-rc1-15938.nupkg",
+        "CodeComb.AntiXSS.1.0.10-rc1-15938.nupkg.sha512",
+        "CodeComb.AntiXSS.nuspec",
+        "lib/dnx451/CodeComb.AntiXSS.dll",
+        "lib/dnx451/CodeComb.AntiXSS.xml",
+        "lib/dnxcore50/CodeComb.AntiXSS.dll",
+        "lib/dnxcore50/CodeComb.AntiXSS.xml"
+      ]
+    },
+    "CodeComb.HtmlAgilityPack/1.0.3": {
+      "type": "package",
+      "sha512": "Y00pXtcBVP2wKpUUV5PUAmzwBZRsjnJgSgQOO+ciVAZuss2Jjaiixs4n+IDMUHXvOSgFaC7aGSJqGS3TXQQAdw==",
+      "files": [
+        "CodeComb.HtmlAgilityPack.1.0.3.nupkg",
+        "CodeComb.HtmlAgilityPack.1.0.3.nupkg.sha512",
+        "CodeComb.HtmlAgilityPack.nuspec",
+        "lib/dnx451/CodeComb.HtmlAgilityPack.dll",
+        "lib/dnx451/CodeComb.HtmlAgilityPack.xml",
+        "lib/dnxcore50/CodeComb.HtmlAgilityPack.dll",
+        "lib/dnxcore50/CodeComb.HtmlAgilityPack.xml"
+      ]
+    },
     "CodeComb.Localization/1.0.6-rc1-15938": {
       "type": "package",
       "sha512": "H5M5feCjrTSVz+GXx1Lli7jL1U+cJypv2RIMR4/Pv1jQOlD3YikZ0S0Om26zXzNHL46dKw6cVRNBUwWeWI0rCg==",
@@ -6538,6 +6729,19 @@
         "lib/dnx451/CodeComb.Localization.xml",
         "lib/dnxcore50/CodeComb.Localization.dll",
         "lib/dnxcore50/CodeComb.Localization.xml"
+      ]
+    },
+    "CodeComb.Marked/1.0.4-rc1-15938": {
+      "type": "package",
+      "sha512": "5tEfZD1aUmrKJvZNOxH0jgfnTyr4gLbUmswZhX6hxHSQq1ndJaZa+VcoEIi8LIWVIUgGWOFIkzhRgUF2GDQ0mw==",
+      "files": [
+        "CodeComb.Marked.1.0.4-rc1-15938.nupkg",
+        "CodeComb.Marked.1.0.4-rc1-15938.nupkg.sha512",
+        "CodeComb.Marked.nuspec",
+        "lib/dnx451/CodeComb.Marked.dll",
+        "lib/dnx451/CodeComb.Marked.xml",
+        "lib/dnxcore50/CodeComb.Marked.dll",
+        "lib/dnxcore50/CodeComb.Marked.xml"
       ]
     },
     "CodeComb.TestHost/1.0.1-rc1-15928": {
