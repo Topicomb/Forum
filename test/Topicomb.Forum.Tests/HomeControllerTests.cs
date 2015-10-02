@@ -16,7 +16,7 @@ using Moq;
 
 namespace Topicomb.Forum.Tests
 {
-    public class HomeControllerTests : TestContext<Startup>
+    public class HomeControllerTests : MvcTestFixture<Startup>
     {
         [Fact]
         public void index_action_test()

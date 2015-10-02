@@ -10,8 +10,6 @@ using Microsoft.Framework.Logging.Testing;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Dnx.Compilation;
 using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.TestHost;
@@ -25,7 +23,7 @@ using Topicomb.Forum.Models;
 
 namespace Topicomb.Forum.Tests
 {
-    public class InitDBTests : TestContext<Startup>
+    public class InitDBTests : MvcTestFixture<Startup>
     {
         [Fact]
         public async Task database_init_test()
@@ -38,7 +36,6 @@ namespace Topicomb.Forum.Tests
             // Act
             await SampleData.InitDB(services);
             
-
             // Assert
             Assert.NotNull(db.Database);
             Assert.True(await roleManager.RoleExistsAsync("Root"));

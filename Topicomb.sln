@@ -5,8 +5,12 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{308EDA47-1F65-4A1F-B04D-4EC13444EE5C}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		build.cmd = build.cmd
+		build.sh = build.sh
 		global.json = global.json
 		LICENSE = LICENSE
+		makefile.shade = makefile.shade
 		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
