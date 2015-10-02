@@ -31,7 +31,7 @@ namespace Topicomb.Forum.Tests
                 ActionContext = new ActionContext(httpContext, new Microsoft.AspNet.Routing.RouteData(), new ActionDescriptor())
             };
             controller.Prepare();
-            var result = await controller.Login("admin", "123456", false);
+            await controller.Login("admin", "123456", false);
            
             // Assert
             Assert.True(controller.User.IsSignedIn());
@@ -51,7 +51,7 @@ namespace Topicomb.Forum.Tests
                 ActionContext = new ActionContext(httpContext, new Microsoft.AspNet.Routing.RouteData(), new ActionDescriptor())
             };
             controller.Prepare();
-            var result = await controller.Login("admin", "000000", false);
+            await controller.Login("admin", "000000", false);
 
             // Assert
             Assert.False(controller.User.IsSignedIn());
