@@ -10,8 +10,6 @@ using Microsoft.Framework.Logging.Testing;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Dnx.Compilation;
 using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.TestHost;

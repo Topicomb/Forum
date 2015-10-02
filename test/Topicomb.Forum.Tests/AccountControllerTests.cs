@@ -70,7 +70,7 @@ namespace Topicomb.Forum.Tests
             var services = GenerateServiceProvider(mockHttpContext: x =>
             {
                 x.Setup(y => y.User)
-                    .Returns(CreateAppIdentity());
+                    .Returns(CreateIdentityFromUserName("admin"));
             });
             await SampleData.InitDB(services);
             var db = services.GetRequiredService<ForumContext>();

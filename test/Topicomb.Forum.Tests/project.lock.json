@@ -97,7 +97,7 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.Testing/1.0.8-rc1-15938": {
+      "CodeComb.Testing/1.0.9-rc1-15938": {
         "type": "package",
         "dependencies": {
           "CodeComb.TestHost": "1.0.3-rc1-15938",
@@ -117,7 +117,7 @@
           "lib/dnx451/CodeComb.Testing.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.45-rc1-15938": {
+      "CodeComb.vNext/1.0.46-rc1-15938": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.6-rc1-15938",
@@ -2115,7 +2115,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.10-rc1-15938",
           "CodeComb.Marked": "1.0.4-rc1-15938",
-          "CodeComb.vNext": "1.0.45-rc1-15938",
+          "CodeComb.vNext": "1.0.46-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15865",
           "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-15613",
@@ -2322,7 +2322,7 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.Testing/1.0.8-rc1-15938": {
+      "CodeComb.Testing/1.0.9-rc1-15938": {
         "type": "package",
         "dependencies": {
           "CodeComb.TestHost": "1.0.3-rc1-15938",
@@ -2342,7 +2342,7 @@
           "lib/dnx451/CodeComb.Testing.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.45-rc1-15938": {
+      "CodeComb.vNext/1.0.46-rc1-15938": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.6-rc1-15938",
@@ -4346,7 +4346,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.10-rc1-15938",
           "CodeComb.Marked": "1.0.4-rc1-15938",
-          "CodeComb.vNext": "1.0.45-rc1-15938",
+          "CodeComb.vNext": "1.0.46-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15865",
           "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-15613",
@@ -4553,7 +4553,7 @@
           "lib/dnx451/CodeComb.TestHost.dll": {}
         }
       },
-      "CodeComb.Testing/1.0.8-rc1-15938": {
+      "CodeComb.Testing/1.0.9-rc1-15938": {
         "type": "package",
         "dependencies": {
           "CodeComb.TestHost": "1.0.3-rc1-15938",
@@ -4573,7 +4573,7 @@
           "lib/dnx451/CodeComb.Testing.dll": {}
         }
       },
-      "CodeComb.vNext/1.0.45-rc1-15938": {
+      "CodeComb.vNext/1.0.46-rc1-15938": {
         "type": "package",
         "dependencies": {
           "CodeComb.Localization": "1.0.6-rc1-15938",
@@ -6577,7 +6577,7 @@
         "dependencies": {
           "CodeComb.AntiXSS": "1.0.10-rc1-15938",
           "CodeComb.Marked": "1.0.4-rc1-15938",
-          "CodeComb.vNext": "1.0.45-rc1-15938",
+          "CodeComb.vNext": "1.0.46-rc1-15938",
           "EntityFramework.InMemory": "7.0.0-rc1-15865",
           "EntityFramework.Sqlite": "7.0.0-rc1-15865",
           "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-15613",
@@ -6760,23 +6760,23 @@
         "lib/dnxcore50/CodeComb.TestHost.xml"
       ]
     },
-    "CodeComb.Testing/1.0.8-rc1-15938": {
+    "CodeComb.Testing/1.0.9-rc1-15938": {
       "type": "package",
-      "sha512": "thfMJ1PrdcfDKjaMxtsugM7P/vOuF00sjqBMfqYFD2XUsMURugyj+HQQVWt2Zqg1lm2FpDBQLPZOdahMUjqq5g==",
+      "sha512": "LEJutqCeQgZaCpwI58JTiOjfLvfE3P5oqd3+pC6up8Oe/oHVaRNZkcB3JosqsE/fJq8HU6DW3dSyvucL8pp6+g==",
       "files": [
-        "CodeComb.Testing.1.0.8-rc1-15938.nupkg",
-        "CodeComb.Testing.1.0.8-rc1-15938.nupkg.sha512",
+        "CodeComb.Testing.1.0.9-rc1-15938.nupkg",
+        "CodeComb.Testing.1.0.9-rc1-15938.nupkg.sha512",
         "CodeComb.Testing.nuspec",
         "lib/dnx451/CodeComb.Testing.dll",
         "lib/dnx451/CodeComb.Testing.xml"
       ]
     },
-    "CodeComb.vNext/1.0.45-rc1-15938": {
+    "CodeComb.vNext/1.0.46-rc1-15938": {
       "type": "package",
-      "sha512": "aYkmXWHv2tDmP7KeUHsbImWBcqsjbpcq4UwYka24RkovuY8RFegTy/dXWEm0o/JSv09HLDENi39vdCByk3RnGA==",
+      "sha512": "+8LDpW801/Ndl0C/jvvhjRGdAEpIY0tGvlO2uGUrOx5HIW6danO9oZ8QQw6bN2hNY5RJiG/NURFmelf+hzmMkw==",
       "files": [
-        "CodeComb.vNext.1.0.45-rc1-15938.nupkg",
-        "CodeComb.vNext.1.0.45-rc1-15938.nupkg.sha512",
+        "CodeComb.vNext.1.0.46-rc1-15938.nupkg",
+        "CodeComb.vNext.1.0.46-rc1-15938.nupkg.sha512",
         "CodeComb.vNext.nuspec",
         "lib/dnx451/CodeComb.vNext.dll",
         "lib/dnx451/CodeComb.vNext.xml",
@@ -9043,7 +9043,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Topicomb.Forum ",
-      "CodeComb.Testing >= 1.0.8-rc1-15928"
+      "CodeComb.Testing >= 1.0.9-rc1-15928"
     ],
     "DNX,Version=v4.5.1": []
   }
