@@ -25,7 +25,7 @@ using Topicomb.Forum.Models;
 
 namespace Topicomb.Forum.Tests
 {
-    public class InitDBTests : TestContext<Startup>
+    public class InitDBTests : MvcTestFixture<Startup>
     {
         [Fact]
         public async Task database_init_test()
@@ -38,7 +38,6 @@ namespace Topicomb.Forum.Tests
             // Act
             await SampleData.InitDB(services);
             
-
             // Assert
             Assert.NotNull(db.Database);
             Assert.True(await roleManager.RoleExistsAsync("Root"));

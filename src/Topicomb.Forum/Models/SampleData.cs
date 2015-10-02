@@ -29,6 +29,7 @@ namespace Topicomb.Forum.Models
 				// Creating Root User
 				var user = new User { UserName = Configuration["Installation:RootUserName"], Email = "admin@codecomb.com" };
 				var result2 = await UserManager.CreateAsync(user, Configuration["Installation:Password"]);
+                await UserManager.SetTwoFactorEnabledAsync(user, false);
                 foreach (var e in result2.Errors)
                     throw new Exception(e.Description);
 				await UserManager.AddToRoleAsync(user, "Root");
