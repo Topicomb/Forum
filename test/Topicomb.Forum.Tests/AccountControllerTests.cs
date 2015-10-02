@@ -36,5 +36,25 @@ namespace Topicomb.Forum.Tests
             // Assert
             Assert.True(controller.User.IsSignedIn());
         }
+
+        [Fact]
+        public async Task login_failed_test()
+        {
+            // Arrange
+            var services = GenerateServiceProvider();
+            var db = services.GetRequiredService<ForumContext>();
+            var httpContext = services.GetRequiredService<IHttpContextAccessor>().HttpContext;
+
+            // Act
+            var controller = new AccountController
+            {
+                ActionContext = new ActionContext(httpContext, new Microsoft.AspNet.Routing.RouteData(), new ActionDescriptor())
+            };
+            controller.Prepare();
+            var result = await controller.Login("admin", "000000", false);
+
+            // Assert
+            Assert.False(controller.User.IsSignedIn());
+        }
     }
 }
