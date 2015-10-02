@@ -86,10 +86,8 @@ namespace Topicomb.Forum.Tests
             // Assert
             Assert.True(controller.User.IsSignedIn());
             Assert.Equal("admin", controller.User.GetUserName());
-            Assert.Equal("1", controller.User.GetUserId());
             Assert.NotNull(controller.CurrentUser);
             Assert.Equal("admin", controller.CurrentUser.UserName);
-            Assert.Equal(1, controller.CurrentUser.Id);
         }
     }
 }
