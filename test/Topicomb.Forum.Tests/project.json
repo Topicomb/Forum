@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
     "Topicomb.Forum": "",
-    "CodeComb.Testing": "1.0.5-rc1-15928"
+    "CodeComb.Testing": "1.0.6-rc1-15928"
   },
 
   "commands": {
