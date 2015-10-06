@@ -4,8 +4,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
-using Microsoft.Framework.Caching.Memory;
-using Microsoft.Framework.DependencyInjection;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNet.TestHost;
 using Topicomb.Forum.Models;
 using Newtonsoft.Json;
@@ -13,7 +13,7 @@ using Xunit;
 
 namespace Topicomb.Forum.FunctionalTests
 {
-    public class AccountTests : TestHost
+    public class AccountTests : HostTestFixture
     {
         [Fact]
         public async Task login_failed_test()

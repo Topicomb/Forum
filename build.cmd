@@ -28,9 +28,9 @@ IF %BUILDCMD_KOREBUILD_VERSION%=="" (
 
 IF "%SKIP_DNX_INSTALL%"=="1" goto run
 
-CALL packages\KoreBuild\build\dnvm install 1.0.0-rc1-15779 -arch x86 -u
+CALL packages\KoreBuild\build\dnvm install 1.0.0-rc1-15828 -arch x86 -u
 CALL packages\KoreBuild\build\dnvm install default -runtime CoreCLR -arch x86
-CALL packages\KoreBuild\build\dnvm use 1.0.0-rc1-15779
+CALL packages\KoreBuild\build\dnvm use 1.0.0-rc1-15828
 
 :run
 CALL packages\KoreBuild\build\dnvm use default -runtime CLR -arch x86

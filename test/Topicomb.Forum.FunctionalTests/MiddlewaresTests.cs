@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
-using Microsoft.Framework.Caching.Memory;
-using Microsoft.Framework.DependencyInjection;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNet.TestHost;
 using Topicomb.Forum.Models;
 using Xunit;
 
 namespace Topicomb.Forum.FunctionalTests
 {
-    public class MiddlewaresTests : TestHost
+    public class MiddlewaresTests : HostTestFixture
     {
         [Fact]
         public async Task localization_js_test()
