@@ -3,20 +3,20 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "Microsoft.AspNet.Mvc": "6.0.0-rc1-15938",
-    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-15938",
-    "Microsoft.AspNet.Server.WebListener": "1.0.0-rc1-15680",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-15715",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-15673",
-    "Microsoft.Framework.Logging": "1.0.0-rc1-15634",
-    "Microsoft.Framework.Logging.Console": "1.0.0-rc1-15634",
-    "Microsoft.Framework.Logging.Debug": "1.0.0-rc1-15634",
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-15613",
-    "CodeComb.vNext": "1.0.46-rc1-15938",
-    "CodeComb.Marked": "1.0.4-rc1-15938",
-    "CodeComb.AntiXSS": "1.0.10-rc1-15938",
-    "EntityFramework.InMemory": "7.0.0-rc1-15865",
-    "EntityFramework.Sqlite": "7.0.0-rc1-15865"
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-15995",
+    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-15995",
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-rc1-15716",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-15758",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-15707",
+    "Microsoft.Extensions.Logging": "1.0.0-rc1-15664",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-15664",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-15664",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-15647",
+    "CodeComb.vNext": "2.0.0-rc1-15995",
+    "CodeComb.Marked": "2.0.0-rc1-15995",
+    "CodeComb.AntiXSS": "2.0.0-rc1-15995",
+    "EntityFramework.InMemory": "7.0.0-rc1-15920",
+    "EntityFramework.Sqlite": "7.0.0-rc1-15920"
   },
 
   "commands": {

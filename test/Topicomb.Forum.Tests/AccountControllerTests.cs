@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.AspNet.Http;
-using Microsoft.Framework.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Data.Entity;
 using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Mvc.Abstractions;
@@ -12,7 +12,7 @@ using Microsoft.AspNet.Http.Authentication;
 using Microsoft.AspNet.Identity;
 using Topicomb.Forum.Controllers;
 using Topicomb.Forum.Models;
-using CodeComb.Testing;
+using CodeComb.TestFixture.Mvc;
 using Xunit;
 using Moq;
 
